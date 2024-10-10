@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body> 
+    <!-- <input type="text" name="" id="">
+    <input type="text" name="" id=""> -->
+
+    <input type="text" name="" id="name">
+    <button onclick="show()">Click</button>
+    
+    <script>
+
+        // let a = []
+        const input = document.getElementById("name")
+        function show() {
+            let g = ["kishore", "surya", "krishnan"]
+            const f = input.value
+            const push = g.push(f)
+            console.log(push ,g);
+            return (g)
+        }
+       
+    </script>
+</body>
+
+</html>

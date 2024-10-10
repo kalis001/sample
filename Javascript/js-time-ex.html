@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <button onclick="myfun()">STOP</button>
+</head>
+
+<body>
+
+
+
+    <script>
+        let g = ["Sun","mon", "Tues", "wed", "thurs", "fri", "sat"]
+        let h = new Date()
+
+        console.log(g[h.getDay()]);
+        
+
+        let a = new Date();
+        let b = a.getHours();
+        let c = a.getMinutes();
+        let d = a.getSeconds();
+
+        console.log(a.toLocaleDateString());
+        console.log(a.toLocaleTimeString());
+
+
+
+
+
+    </script>
+</body>
+
+
+</html>

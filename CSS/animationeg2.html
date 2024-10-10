@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .road{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        .car{
+            position: relative;
+            width: 300px;
+            height: 300px;
+
+            animation-name: car;
+            animation-duration: 10s;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes car{
+            0%{
+                bottom: 0;
+                top: 600px;
+                left: 450px;
+            }
+            50%{
+                bottom: 200px;
+                top: 500px;
+                left: 450px ;
+
+                width: 200px;
+                height: 200px;
+                
+            }
+            100%{
+                
+                bottom: 300px;
+                top: 400px;
+                left: 570px;
+
+                width: 50px;
+                height: 50px;
+            }
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="total">
+        <img class="road" src="./road.jpg" alt="">
+        <img class="car" src="./car.png" alt="">
+    </div>
+</body>
+</html>

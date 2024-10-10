@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+        let a = ["html","Head","body"]
+        let b = [20,30,10,15]
+        b.sort(myFunction)
+
+        // console.log(a.sort());
+        console.log(b.reverse());
+
+        function myFunction(a,b){
+            return b-a
+        }
+
+        let c = [12,34,21,10,8,45]
+        c.sort(oneFunction)
+
+        function oneFunction(a,b){
+            return .5 - Math.random()  
+        }
+        console.log(c);
+        
+    </script>
+</body>
+</html>

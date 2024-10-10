@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card:hover {
+            background-color: rgb(92, 92, 92);
+            transition: .2s;
+            transform: translatey(-10px);
+            color: white;
+            cursor: pointer;
+        }
+
+        .card {
+            width: 200px;
+            height: 400px;
+            overflow: hidden;
+            border: 2px solid rgb(80, 80, 80);
+            box-shadow: 5px 5px 15px;
+            border-radius: 15px;
+            margin-top: 15px;
+
+
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            transition: 1s;
+            /* opacity: .2; */
+
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .last-para:hover{
+            opacity: 0;
+            transition: 1s;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="./product-1-sm.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora id dignissimos quaerat dolore
+                reprehenderit
+                a sint maiores mollitia voluptatibus doloremque! Laudantium libero quam iste saepe fuga magni sint
+                itaque
+                quidem!</p>
+        </div>
+        <div class="card">
+            <img src="./product-2-sm.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora id dignissimos quaerat dolore
+                reprehenderit
+                a sint maiores mollitia voluptatibus doloremque! Laudantium libero quam iste saepe fuga magni sint
+                itaque
+                quidem!</p>
+        </div>
+        <div class="card">
+            <img src="./product-3-sm.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora id dignissimos quaerat dolore
+                reprehenderit
+                a sint maiores mollitia voluptatibus doloremque! Laudantium libero quam iste saepe fuga magni sint
+                itaque
+                quidem!</p>
+        </div>
+        <div class="card">
+            <img src="./product-4-sm.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora id dignissimos quaerat dolore
+                reprehenderit
+                a sint maiores mollitia voluptatibus doloremque! Laudantium libero quam iste saepe fuga magni sint
+                itaque
+                quidem!</p>
+        </div>
+        <div class="card">
+            <img src="./product-5-sm.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora id dignissimos quaerat dolore
+                reprehenderit
+                a sint maiores mollitia voluptatibus doloremque! Laudantium libero quam iste saepe fuga magni sint
+                itaque
+                quidem!</p>
+        </div>
+        <div class="card">
+            <img src="./product-6-sm.png" alt="">
+            <p class="last-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora id dignissimos
+                quaerat dolore reprehenderit
+                a sint maiores mollitia voluptatibus doloremque! Laudantium libero quam iste saepe fuga magni sint
+                itaque
+                quidem!</p>
+        </div>
+    </div>
+</body>
+
+</html>

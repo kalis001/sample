@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+        }
+        .navbar-container {
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .navbar-first {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        .template {
+            margin-left: 25px;
+            font-size: 14px;
+            color: grey;
+            border-left: 2px solid rgb(176, 174, 174);
+            margin-top: 30px;
+            padding-left: 25px;
+        }
+
+        .contact-details {
+            color: grey;
+            font-size: 12px;
+        }
+
+        .search-bar {
+            position: relative;
+            bottom: 10px;
+            padding: 5px 10px;
+            font-size: 13px;
+            width: 200px;
+            border: 1px solid grey;
+        }
+
+        @media(max-width:770px) {
+            .template {
+                display: none;
+            }
+
+            .contact-details {
+                display: none;
+            }
+        }
+
+        .nav-item a:hover {
+            background-color: grey;
+        }
+
+        .bg-img {
+            background: url(./slide-01.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .man {
+            position: relative;
+            left: 100px;
+        }
+
+        .image-link {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: rgb(0, 166, 255);
+            border-radius: 5px;
+            font-size: 15px;
+            position: relative;
+            top: 170px;
+            left: 500px;
+        }
+
+        .second-nav ul {
+            display: flex;
+            background-color: rgb(74, 74, 74);
+        }
+
+        .second-nav ul li {
+            list-style: none;
+            padding: 10px 20px;
+
+        }
+
+        .second-nav ul li:hover {
+            background-color: grey;
+        }
+
+        .second-nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <header class="navbar navbar-expand-md navbar-container ">
+        <div class="navbar-first navbar navbar-expand-lg">
+            <a class="navbar-brand" href="">NEVIA</a>
+            <p class="template">Template without comprimises!</p>
+        </div>
+        <div class=" contact-details ">
+            <p>Contact Phone : +48 880 440 110</p>
+            <input class="search-bar" type="search" placeholder="search">
+        </div>
+        <div class="navbar-toggler" data-bs-target="#navmenu" data-bs-toggle="collapse">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+        </div>
+        <div class="collapse navbar-collapse " id="navmenu">
+            <ul class="navbar-nav nav-two d-md-none d-block bg-secondary">
+                <li class="nav-item"><a class="nav-link text-light" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#">Features</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#">Shortcodes</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#">Shop</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="second-nav d-md-block d-none">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Shortcodes</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- <div class="bg-img"> -->
+    <div class="bg-img">
+        <img class="man card-img  img-fluid w-25" src="./bg.png" alt="">
+    </div>
+    <style>
+
+    </style>
+
+    <div class="row mt-4 container">
+        <div class="col-md-4 col-12 d-flex">
+            <div class="me-3"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-megaphone" viewBox="0 0 16 16">
+                    <path
+                        d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 75 75 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0m-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233q.27.015.537.036c2.568.189 5.093.744 7.463 1.993zm-9 6.215v-4.13a95 95 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A61 61 0 0 1 4 10.065m-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68 68 0 0 0-1.722-.082z" />
+                </svg></div>
+            <div>
+                <p>clean Design</p>
+                <p>Incredibly clean design provides you powerful way to grow your business.</p>
+            </div>
+
+        </div>
+        <div class="col-md-4 col-12 d-flex">
+            <div class="me-3"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-magic" viewBox="0 0 16 16">
+                    <path
+                        d="M9.5 2.672a.5.5 0 1 0 1 0V.843a.5.5 0 0 0-1 0zm4.5.035A.5.5 0 0 0 13.293 2L12 3.293a.5.5 0 1 0 .707.707zM7.293 4A.5.5 0 1 0 8 3.293L6.707 2A.5.5 0 0 0 6 2.707zm-.621 2.5a.5.5 0 1 0 0-1H4.843a.5.5 0 1 0 0 1zm8.485 0a.5.5 0 1 0 0-1h-1.829a.5.5 0 0 0 0 1zM13.293 10A.5.5 0 1 0 14 9.293L12.707 8a.5.5 0 1 0-.707.707zM9.5 11.157a.5.5 0 0 0 1 0V9.328a.5.5 0 0 0-1 0zm1.854-5.097a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L8.646 5.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0l1.293-1.293Zm-3 3a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L.646 13.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0z" />
+                </svg></div>
+            <div>
+                <p>Responsive</p>
+                <p>This theme is responsive, so it will looks awesome on all mobile devices.</p>
+            </div>
+
+        </div>
+        <div class="col-md-4 col-12 d-flex">
+            <div class="me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-apple"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282" />
+                    <path
+                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282" />
+                </svg>
+            </div>
+            <div>
+                <p>Retina Ready</p>
+                <p>Nevia is ready for retina and looks fantastic on high-resolution displays.</p>
+            </div>
+        </div>
+    </div>
+    <style>
+        .photography{
+            border-bottom: 5px solid rgb(211, 211, 211);
+        }
+        .photography:hover{
+            opacity: 0.9;
+            border-bottom: 5px solid rgb(8, 140, 255);
+        }
+    </style>
+
+    <div class="container mt-5 row">
+        <div class="col-md-3 col-12">
+            <p><b>Recent work</b></p>
+            <p>Adding portfolio entries with this shortcode is now easier then ever.</p>
+        </div>
+        <div class="col-md-3 col-12 text-center">
+            <img class="w-100 photography" src="./portfolio-01.jpg" alt="">
+            <p><b>Time is Running Out</b></p>
+            <p>Photography</p>
+        </div>
+        <div class="col-3 d-md-block d-none text-center">
+            <img class="w-100  photography" src="./portfolio-02.jpg" alt="">
+            <p><b>Time is Running Out</b></p>
+            <p>Photography</p>
+        </div>
+        <div class="col-3 d-md-block d-none text-center">
+            <img class="w-100  photography" src="./portfolio-03.jpg" alt="">
+            <p><b>Time is Running Out</b></p>
+            <p>Photography</p>
+        </div>
+    </div>
+
+    <style>
+        .date {
+            background-color: rgb(239, 239, 239);
+            padding: 5px 10px;
+            margin-bottom: 0;
+            text-align: center;
+            color: darkgrey;
+        }
+
+        .month {
+            background-color: darkgrey;
+            padding: 5px 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .stuff {
+            color: grey;
+        }
+
+        .testimonials-content {
+            background-color: rgb(235, 235, 235);
+            font-size: 13px;
+            padding: 15px 30px;
+            color: grey;
+        }
+        
+    </style>
+
+
+    <div class="mt-5 d-flex row">
+
+        <div class="col-md-3 col-12">
+            <p><b>Recent News</b> <span class="stuff">/Stuff from our Blog</span></p>
+            <div class="d-flex">
+                <div>
+                    <p class="date">28</p>
+                    <p class="month">Dec</p>
+                </div>
+                <div class="ms-3">
+                    <p><b>The Boating Life Begins with a good Storm</b></p>
+                    <p>nteger libero lectus, porta acean pulvinar ac, facilisis non arcu. Maecenas enim orci,
+                        adipiscing dictum sit amet gusce dapibus.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex mt-5 ms-3 col-md-3 col-12">
+            <div>
+                <p class="date">28</p>
+                <p class="month">Dec</p>
+            </div>
+            <div class="ms-3">
+                <p><b>The Boating Life Begins with a good Storm</b></p>
+                <p>nteger libero lectus, porta acean pulvinar ac, facilisis non arcu. Maecenas enim orci,
+                    adipiscing dictum sit amet gusce dapibus.</p>
+            </div>
+        </div>
+
+        <div class="ms-3 mt-5 col-md-5 col-12">
+            <p><b>Testimonials</b> / What our clients say</p>
+            <p class="testimonials-content">Posuere erat a ante venenatis dapibus posuere velit aliquet. Proin sit amet mauris odio pellentesque iaculis. Cum sociis natoque penatibus et lorem magnis dis parturient montes, nascetur ridiculus mus. Duisean lorem llis noenan coeammodo luctus.</p>
+        </div>
+    </div>
+
+    <style>
+        .footer{
+            background-color: rgb(95, 95, 95);
+            color: white;
+        }
+    </style>
+
+    <div class="footer row mt-5 p-5">
+        <div class="col-12 col-md-3">
+            <div class="h1"><b>NEVIA</b></div>
+            <div>Morbi gravida imperdiet rutrum fusce mattis, lectus consequat vestibulum, duinibh fermentum ligula.</div>
+        </div>
+
+        <div class="col-12 col-md-3 mt-5">
+            <div><b>Contact Details</b></div>
+            <div><b>Address: </b>123 Seward Street, <br><span class="ms-5">Oklahoma City, USA</span></div>
+            <div><b>phone: </b>+48 880 440 110</div>
+            <div><b>Email: </b>mail@example.com</div>
+        </div>
+
+        <div class="col-12 col-md-3 mt-5">
+           <b>Photo Stream </b> 
+        </div>
+
+        <div class="col-12 col-md-3 mt-5">
+            <b>Twitter</b>
+        </div>
+    </div>
+
+</body>
+
+</html>

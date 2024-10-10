@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="id1">content1</h1>
+        <h1 id="id2">content2</h1>
+        <h1 id="id3">content3</h1>
+        <h1 id="id4">content4</h1>
+    </div>
+
+    <script>
+        const div = document.getElementById('container')
+        const he1 = document.getElementById('id1')
+        const he2 = document.getElementById('id2')
+        const he3 = document.getElementById('id3')
+        const he4 = document.getElementById('id4')
+
+
+        const new1 = document.createElement('p')
+        const seta = new1.setAttribute("id", "para")
+        const text = document.createTextNode("I Am A Para")
+
+
+
+        new1.append(text)
+
+        console.log(new1);
+        div.insertBefore(new1, he3)
+
+    </script>
+</body>
+
+</html>

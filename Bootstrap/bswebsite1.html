@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <script src="./Bootstrap.js"></script>
+
+    <style>
+        .augustine {
+            font-size: 40px;
+            letter-spacing: 0px;
+        }
+
+        .form-header {
+            font-size: 40px;
+        }
+
+        .checkin,
+        .checkout,
+        .rooms,
+        .guests {
+            color: rgb(0, 121, 73);
+            font-weight: 500;
+            margin: 10px;
+        }
+
+        .availability {
+            padding: 15px 60px;
+            margin-left: 10px;
+            margin-top: 10px;
+            background-color: rgb(6, 136, 101);
+            color: white;
+            border: none;
+        }
+
+        .signin {
+            display: flex;
+            gap: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="signin d-lg-none">
+                <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg></div>
+                <div>Sign in</div>
+            </div>
+            <div class="ms-5 navbar-brand augustine">AUGUSTINE</div>
+            <div class="me-5 menu ">Menu
+                <span class="navbar-toggler-icon "></span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="container-left">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="./portfolio-01.jpg" height="500px" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="./portfolio-02.jpg" height="500px" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="./portfolio-03.jpg" height="500px" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="container-right ps-5">
+                    <div class="form-header">Book Your Room</div>
+                    <div class="checkin">
+                        <label class="form-label d-block " for="">CHECK-IN</label>
+                        <input class="form-control" type="date" name="" id="">
+                    </div>
+                    <div class="form-label checkout">
+                        <label class="d-block" for="">CHECK-OUT</label>
+                        <input class="form-control" type="date" name="" id="">
+                    </div>
+                    <div class="form-label rooms">
+                        <label class="d-block" for="">ROOMS</label>
+                        <select class="form-select" name="" id="">
+                            <option value="">1 Room</option>
+                            <option value="">2 Room</option>
+                            <option value="">3 Room</option>
+                            <option value="">4 Room</option>
+                            <option value="">5 Room</option>
+                            <option value="">6 Room</option>
+                            <option value="">7 Room</option>
+                            <option value="">8 Room</option>
+                            <option value="">9 Room</option>
+                            <option value="">10 Room</option>
+                        </select>
+                    </div>
+                    <div class="guests">
+                        <label class="d-block" for="">GUESTS:</label>
+                        <select class="form-select" name="" id="">
+                            <option value="">Adult</option>
+                            <option value="">Children</option>
+                            <option value="">Infant's</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button class="availability">AVAILABILITY</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .offer {
+            text-align: center;
+        }
+
+        .offer-header {
+            font-weight: 500;
+            font-size: 45px;
+        }
+
+        .offer-content {
+            line-height: 25px;
+
+        }
+
+        .features-head {
+            font-weight: 500;
+            font-size: 25px;
+        }
+
+        .features-head:hover {
+            color: rgb(5, 123, 84);
+            transition: 1s;
+        }
+
+        .book-suite {
+            color: black;
+            font-size: 13px;
+            letter-spacing: 3px;
+        }
+        .perfect-suit{
+            margin-bottom: 150px;
+        }
+        .luxury{
+            color: rgb(5, 198, 159);
+            letter-spacing: 1px;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .discover-btn{
+            padding: 20px 90px;
+            font-size: 10px;
+            letter-spacing: 1px;
+        }
+        .discover-btn:hover{
+            color: white;
+            background-color: rgb(4, 133, 92);
+            transition: .5s;
+            border: 1px solid rgb(4, 133, 92);
+        }
+        .cozy{
+            background-color: rgb(209, 208, 208);
+        }
+    </style>
+
+    <div class="container offer mt-5">
+        <div>EXCLUSICE OFFER</div>
+        <div class="offer-header">Welcome to L'Hotel Augustine</div>
+        <div class="offer-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas consectetur,
+            expedita similique ipsam
+            numquam tenetur esse quos magni sequi consequatur, impedit fuga ut quod doloremque nihil beatae excepturi
+            dignissimos cum.</div>
+    </div>
+    <div class="container ">
+        <div class="row mt-5">
+            <div class="col-6 col-lg-4 align-content-center">
+                <div>
+                    <p class="features-head">24h Front Desk</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, suscipit?</p>
+                </div>
+                <div>
+                    <p class="features-head mt-5">Airport Transfers</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, suscipit?</p>
+                </div>
+                <div>
+                    <p class="features-head mt-5">Spa & Wellness</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, suscipit?</p>
+                </div>
+            </div>
+
+            <div class="col-4  d-none d-lg-block">
+                <img src="./WEB 2 IMAGES/augustine.webp" alt="">
+            </div>
+
+            <div class="col-6 col-lg-4 align-content-center">
+                <div>
+                    <p class="features-head">Restaurent</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, suscipit?</p>
+                </div>
+                <div>
+                    <p class="features-head mt-5">Outdoor Activities</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, suscipit?</p>
+                </div>
+                <div>
+                    <p class="features-head mt-5">Spa & Wellness</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, suscipit?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container perfect-suit mt-5">
+        <div class="row">
+            <h6>EXCLUSIVE OFFER</h6>
+            <h2>Find The Perfect Suite</h2>
+
+            <div class="col-lg-4 col-12 mt-5">
+                <img src="./WEB 2 IMAGES/Room-img13.jpg" height="330px" alt="">
+                <h3 class="mt-4">Twin Room</h3>
+                <div class="d-flex ">
+                    <p>Capacity: <span>1-2 PERSONS</span> </p>
+                    <p class="ms-5">Size:<span> 42M2</span></p>
+                </div>
+                <p>Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et.
+                    Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris</p>
+                <a class="mt-3 book-suite" href="#">BOOK SUITE</a>
+            </div>
+            <div class="col-lg-4 col-12 mt-5">
+                <img src="./WEB 2 IMAGES/Room-img14.jpg" height="330px" alt="">
+                <h3 class="mt-4">Double-Double</h3>
+                <div class="d-flex ">
+                    <p>Capacity: <span>1-2 PERSONS</span> </p>
+                    <p class="ms-5">Size:<span> 42M2</span></p>
+                </div>
+                <p>Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et.
+                    Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris</p>
+                <a class="mt-3 book-suite" href="#">BOOK SUITE</a>
+            </div>
+            <div class="col-lg-4 col-12 mt-5">
+                <img src="./WEB 2 IMAGES/Room-img15.jpg" height="330px" alt="">
+                <h3 class="mt-4">Mini Suit</h3>
+                <div class="d-flex ">
+                    <p>Capacity: <span>1-2 PERSONS</span> </p>
+                    <p class="ms-5">Size:<span> 42M2</span></p>
+                </div>
+                <p>Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et.
+                    Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris</p>
+                <a class="mt-3 book-suite" href="#">BOOK SUITE</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 col-12 pt-5 ps-5 cozy">
+                <p class="luxury">LUXURY APPARTMENTS</p>
+                <h2>Get Cozy.</h2>
+                <p class="mt-4">Dictum varius duis at consectetu ut lorem donec massa sapien faucibus. Tincidunt arcu non sodales
+                    neque
+                    sod consec tetur.</p>
+                <button class="discover-btn mt-4">DISCOVER MORE</button>
+            </div>
+            <div class="col-lg-8 col-12">
+                <video  width="700px" height="300px" autoplay loop>
+                    <source  src="./WEB 2 IMAGES/video2.mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="text-center">
+            <p>BROWSE THROUGH</p>
+            <h1>Our Latest Offers</h1>
+            <div class="row">
+                <div class="col-3">
+                    <img src="./WEB 2 IMAGES/towel– Augustine_files/blog_home6.jpg" alt="">
+                    <div>
+                        <h6>NEWS & OFFERS</h6>
+                        <h4>Body and soul-reviews for best hotel</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, fugit dolores! Repellendus consectetur atque aspernatur exercitationem unde officiis praesentium, ab neque temporibus vel eligendi, quasi illum similique fuga voluptate minus!</p>
+                        <a href="#">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</body>
+
+</html>

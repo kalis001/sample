@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="head">The Head1</h1>
+    <h1 id="head">The Head1</h1>
+    <h1 id="head">The Head1</h1>
+    <h1 class="class1">The Head2</h1>
+    <h1>The Head3</h1>
+    <h1>The Head4</h1>
+    <button onclick="change()">Show</button>
+    <p id="demo"></p>
+    
+    <script>
+        function change() {
+//id
+            // let a = document.getElementById('head')
+          // document.getElementById('demo').innerHTML ="the head is here"
+
+  //class
+  
+        // let a = document.getElementsByClassName('class1')
+
+        // document.getElementById('demo').innerHTML ="fghghh"
+
+
+        // let a = document.getElementsByClassName('class1')
+
+        // document.getElementById('demo').innerHTML ="gggg"
+
+
+        // let a = document.getElementsByTagName('h1')
+
+        // document.getElementById('demo').innerHTML =a[2].innerHTML
+
+        let a = document.querySelector('#head')
+
+        document.getElementById('demo').innerHTML =a.innerHTML
+
+        }
+
+    </script>
+
+</body>
+
+</html>

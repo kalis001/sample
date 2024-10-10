@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        Combinator:
+        1. decedant selector (space)
+        2. child selector (>)
+        3. adjacent sibling selector (+)
+        4. general sibling selector (~) 
+    -->
+    <style>
+        /* Decedant selector */
+        .combi p {
+            background-color: aqua;
+        }
+
+        /* Child selector */
+        .combi>p {
+            background-color: blueviolet;
+        }
+
+        /* general sibling selector */
+        .combi~p {
+            background-color: greenyellow;
+        }
+
+        /* adjacent sibling selector */
+        .combi+p {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="combi">
+        <p>inside combi clas</p>
+        <p>inside combi clas</p>
+        <p>inside combi clas</p>
+        <p>inside combi clas</p>
+
+        <section>
+            <p>inside section</p>
+            <p>inside section</p>
+            <p>inside section</p>
+            <p>inside section</p>
+        </section>
+    </div>
+    <p>outside combi class</p>
+    <p>outside combi class</p>
+    <p>outside combi class</p>
+    <p>outside combi class</p>
+</body>
+
+</html>

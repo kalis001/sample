@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label::before{
+        content: "Student ";
+        }
+        input:focus{
+            background-color: rgb(182, 182, 182);
+            color: white;
+        }
+        button:hover{
+            color: white;
+            background-color: rgb(110, 110, 151);
+        }
+        input:valid{
+            color: rgb(106, 240, 106);
+        }
+        input:invalid{
+            color: red;
+        }
+        form:focus-within{
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">Name</label>
+        <input type="text" id="" placeholder="Enter your Name" pattern="[0-9A-Z]+" required>
+        <br><br>
+        <label for="">Password</label>
+        <input type="password" placeholder="Enter your password">
+        <br><br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

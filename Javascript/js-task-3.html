@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="getvalue">
+    <button onclick="myfun()">Above</button>
+    <button onclick="belowFun()">Below</button>
+
+    <script>
+        // let a 
+        // let input
+        //  a = values.filter(myfun)
+        //  input = document.getElementById("getvalue").value
+        
+        // function myfun(){
+            //     return a > input
+            // }
+            // console.log(value);
+            const values = [1,5,7,9,10,14,19,32,45,50,56,59,23,13,18,21,63,65,70,82,99];
+            function myfun(){
+            const result = values.filter((x)=>{
+                const input = document.getElementById("getvalue").value
+              return  x > input
+            })
+            console.log(result);
+        }
+
+        function belowFun(){
+            
+            const result = values.filter(Fun)
+            function Fun(x){
+                const input = document.getElementById("getvalue").value
+                return x < input
+            }
+            console.log(result); 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quam quae ea rem voluptatem nemo placeat aliquid molestias eum, atque odit <span>Lorem ipsum dolor sit.</span> libero. Dolore, vitae.       <br>  Voluptate eveniet quo eaque fuga tenetur?</p>
+
+    <button onclick="Fun()">InnerHTML</button>
+    <button onclick="Fun1()">InnerText</button>
+    <button onclick="Fun2()">TextContent</button>
+
+    <h1 id="demo"></h1>
+
+
+    <script>
+        
+        function Fun(){
+            const para = document.getElementById('para').innerHTML
+            document.getElementById('demo').innerText =para
+
+        }
+        function Fun1(){
+            const para = document.getElementById('para').innerText
+            document.getElementById('demo').innerText =para
+
+        }
+        function Fun2(){
+            const para = document.getElementById('para').textContent
+            document.getElementById('demo').innerText =para
+
+        }
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        /* .container [class*='item']{
+            height: 100px;
+            margin-top: 10px;
+            width: 100px;
+            background-color: orange;
+        } */
+
+        .cardcon{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+         .cardcon [class*='card']{
+            height: 250px;
+            width: 180px;
+            border: 3px solid;
+            text-align: center;
+            margin-top: 20px;
+         }
+         .cardcon .card1:hover {
+             transition: 2s;
+
+             /* transform: rotate(30deg); */
+             /* transform: rotateX(180deg); */
+             /* transform: rotatey(180deg); */
+             /* transform: rotateZ(30deg); */
+             /* transform:scale(1.5) ; */
+             /* transform:scalex(1.5) ; */
+             /* transform:scale(.5) ; */
+             /* transform: skew(30deg); */
+             /* transform: translate(10px); */
+                transform: translatey(-10px);
+             /* transform: matrix(1, -0.3, 0, 1, 10, 0); */
+             
+
+         }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+       <div class="item1">1</div>
+       <div class="item2">2</div>
+       <div class="item3">3</div>
+       <div class="item4">4</div>
+    </div> -->
+ <div class="cardcon">
+    <div class="card1">
+        <img src="./dutch door.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, alias.</p>
+    </div>
+    <div class="card2">
+        <img src="./dutch door.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, alias.</p>
+    </div>
+    <div class="card3">
+        <img src="./dutch door.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, alias.</p>
+    </div>
+    <div class="card4">
+        <img src="./dutch door.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, alias.</p>
+    </div>
+</div>
+</body>
+</html>

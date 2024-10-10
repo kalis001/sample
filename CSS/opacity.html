@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        gap: 20px;
+    }
+    img{
+           width: 200px;
+           height: 200px;
+        }
+    .card{
+            width: 200px;
+            height: 400px !important;
+            overflow: hidden;
+            border: 2px solid rgb(80, 80, 80);
+            box-shadow: 5px 5px 15px;
+            border-radius: 15px;
+            margin-top: 15px;
+            cursor:pointer;
+    }
+    
+    img:hover{
+            /* transform:scale(1.1); */
+            opacity: .7;
+            
+            transition: 1s;
+            
+        }
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img  src="./product-1-sm.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora id dignissimos quaerat dolore reprehenderit
+                a sint maiores mollitia voluptatibus doloremque! Laudantium libero quam iste saepe fuga magni sint itaque
+                quidem!</p>
+        </div>
+        <div style="height: 500px;" class="card">
+            <img  src="./product-2-sm.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora id dignissimos quaerat dolore reprehenderit
+                a sint maiores mollitia voluptatibus doloremque! Laudantium libero quam iste saepe fuga magni sint itaque
+                quidem!</p>
+        </div>
+        </div>
+</body>
+</html>

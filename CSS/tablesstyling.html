@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        tr,
+        td {
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+
+        thead {
+            background-color: rgb(225, 154, 154);
+        }
+
+        tbody {
+            background-color: rgb(191, 172, 172);
+        }
+
+        .button {
+            background-color: rgb(34, 22, 253);
+            color: white;
+            padding: 20px 20px;
+            position: absolute;
+            margin-top: 30px;
+            border: 3px solid black;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100px;
+            border-radius: 25px;
+
+        }
+
+        ul {
+            margin-top: 200px;
+            list-style: upper-roman;
+            list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA1UlEQVR4nGNgIAV0Ze2XaEk97Bmgu9w/QHf5bjDWWRmGoihUaxVPgsXGG1ku277FGm/4Fmuy4TsIxxlv+BZnsuFdnOmGyyA1DHGmG7XjTDf+T7DY9D/SaO3/Ip9jYBxhtO4/SByKteEKo4zW/e9KuvV/7/T///fO+P+/K+n2/2jj9ZgKIw3X/l9Y8eH/1u7/YLyw8sP/CMO1mApjjNf/rwu78H9zx38wrg2/8D/aeAOmQpj1KXY7wTgS3Y2hWqvY4kw2Lo0z3bgbKzbZuDTNeCYr0YENAEI7oxM8EHRjAAAAAElFTkSuQmCC");
+            list-style-position: inside;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>S.no</th>
+                <th>Name</th>
+                <th colspan="2">Contact details</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Kishore</td>
+                <td>kishore@gmail.com</td>
+                <td>9628394283</td>
+                <td>coimbatore</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2</td>
+                <td>Krishna</td>
+                <td>krish@gmail.com</td>
+                <td rowspan="2">9437542378</td>
+                <td rowspan="2">salem</td>
+            </tr>
+            <tr>
+                <td>Krishna offcl</td>
+                <td>krishoffcl@gmail.com</td>
+
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>deepak</td>
+                <td>deepak@gmail.com</td>
+                <td>9987239238</td>
+                <td>Tiruppur</td>
+            </tr>
+        </tbody>
+    </table>
+    <a class="button" href="./StylinginElements.html">Say my name</a>
+
+    <ul>
+        <li>Sub item 2.1</li>
+        <li>Sub item 2.2</li>
+        <li>Sub item 2.3</li>
+        <li>Sub item 2.4</li>
+    </ul>
+</body>
+
+</html>

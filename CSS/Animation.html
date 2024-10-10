@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .anime img{
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            padding: 20px;
+            border: 2px solid;
+            position: absolute;
+
+            animation-name: dragon;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+        }
+ 
+     @keyframes dragon{
+        0%{
+            top: 0px;
+            left: 0px;
+
+        }
+        100%{
+            top: 0px;
+            left: 300px;
+
+        }
+
+     } 
+
+
+    </style>
+</head>
+
+<body>
+    <div class="anime">
+        <img height="150px" width="150PX" src="./ai-generated-8537859_1280.webp" alt="">
+    </div>
+</body>
+
+</html>

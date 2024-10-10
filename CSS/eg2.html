@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #demo {
+            background-color: aqua;
+        }
+
+        .demo1 {
+            background-color: blueviolet;
+        }
+
+        div[name="fiveword"] {
+            background-color: lightgreen;
+        }
+
+        #demo,
+        div[name="fiveword"] {
+            color: fuchsia;
+        }
+
+        #demo+p {
+            background-color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div>
+            <p>another child data</p>
+        </div>
+    </div>
+    <div class="demo1">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div name="fiveword">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+
+</html>

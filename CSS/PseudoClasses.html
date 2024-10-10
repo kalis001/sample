@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form{
+            height: 200px;
+            border: 2px solid #000;
+        }
+
+        input:focus{
+            background-color: #00ffff;
+            font-size: larger;
+            color: #ff0000;
+        }
+
+        form:focus-within{
+            background-color: greenyellow;
+        }
+
+        label::after{
+            content: "*";
+            color: #ff0000;
+        }
+
+        input:invalid{
+            background-color: #ff0000;
+            color: cyan;
+        }
+
+        input:valid{
+            background-color: #00ffff;
+            color: #ff0000;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">Uname</label>
+        <input type="text" name="" id="" pattern="[a-z0-9@]+" required>
+        <br><br>
+
+        <label for="">Password</label>
+        <input type="password" name="" id="" required>
+
+        <br><br>
+        <button>Submit</button>
+    </form>
+
+    <style>
+        /* .demo p:first-child{
+            background-color: #00ffff;
+        } */
+        /* .demo p:last-child{
+            background-color: #00ffff;
+        } */
+        /* .demo p:nth-child(2),
+        .demo p:nth-child(3)
+        {
+            background-color: #00ffff;
+        } */
+        /* .demo p:nth-child(even){
+            background-color: #00ffff;
+        } */
+        .demo p:only-child{
+            background-color: #00ffff;
+        }
+    </style>
+
+    <div class="demo">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, qui. Pariatur alias eaque maxime esse, commodi eum delectus nisi architecto temporibus voluptates quod perspiciatis expedita repellat quaerat ad nihil et.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, qui. Pariatur alias eaque maxime esse, commodi eum delectus nisi architecto temporibus voluptates quod perspiciatis expedita repellat quaerat ad nihil et.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, qui. Pariatur alias eaque maxime esse, commodi eum delectus nisi architecto temporibus voluptates quod perspiciatis expedita repellat quaerat ad nihil et.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, qui. Pariatur alias eaque maxime esse, commodi eum delectus nisi architecto temporibus voluptates quod perspiciatis expedita repellat quaerat ad nihil et.</p>
+    </div>
+    <div class="demo">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+</html>

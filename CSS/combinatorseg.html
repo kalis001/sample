@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .combinator p{
+            background-color: blueviolet;
+        }
+
+        .combinator>p {
+            background-color: aqua;
+        }
+        .combinator~p{
+            background-color: burlywood;
+        }
+        .combinator+p {
+            background-color: darkgreen;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="combinator">
+        <p>inside data</p>
+        <p>inside data</p>
+        <p>inside data</p>
+        <p>inside data</p>
+        <p>inside data</p>
+            <section>
+                <p>child data</p>
+                <p>child data</p>
+                <p>child data</p>
+                <p>child data</p>
+                <p>child data</p>
+            </section>
+    </div>
+    <p>Outside data</p>
+    <p>Outside data</p>
+    <p>Outside data</p>
+    <p>Outside data</p>
+    <p>Outside data</p>
+</body>
+</html>

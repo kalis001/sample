@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border: 2px solid #000000;
+            height:300px;
+        }
+        input:focus{
+            background-color: lightgray;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        form:focus-within{
+            background-color: rgb(130, 130, 130);
+        }
+        label::after{
+            content: "*";
+            color:red;
+        }
+        label::before{
+            content: "Student's ";
+        }
+        input:valid{
+            background-color: #000000;
+            color: green;
+        }
+        input:invalid{
+            background-color: black;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">User Name </label>
+        <input type="text" name="" id="" pattern="[a-z0-9]+" required>
+        <br><br>
+        <label for="">password </label>
+        <input type="password" name="" id="" required>
+        <br><br><br>
+        <button>Submit</button>
+    </form>
+
+    <style>
+        .demo>P:first-child{
+            background-color: rgb(7, 160, 255);
+        }
+        /* .demo>P:last-child{
+            background-color: aqua;
+        } */
+         /* .demo>p:nth-child(3){
+            background-color: aqua;
+         } */
+          /* .demo>p:nth-child(even){
+            background-color: aqua;
+          } */
+          /* .demo>p:only-child{
+            background-color: aqua;
+          } */
+    </style>
+    <div class="demo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nihil dolor a mollitia earum enim repellendus odit amet, fuga eius tempore, qui unde, nulla quaerat aperiam excepturi dolores? Deleniti, veniam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nihil dolor a mollitia earum enim repellendus odit amet, fuga eius tempore, qui unde, nulla quaerat aperiam excepturi dolores? Deleniti, veniam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nihil dolor a mollitia earum enim repellendus odit amet, fuga eius tempore, qui unde, nulla quaerat aperiam excepturi dolores? Deleniti, veniam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nihil dolor a mollitia earum enim repellendus odit amet, fuga eius tempore, qui unde, nulla quaerat aperiam excepturi dolores? Deleniti, veniam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nihil dolor a mollitia earum enim repellendus odit amet, fuga eius tempore, qui unde, nulla quaerat aperiam excepturi dolores? Deleniti, veniam.</p>
+    </div>
+    <div class="demo">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, soluta.</p>
+    </div>
+</body>
+</html>

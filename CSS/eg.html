@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casecading style Sheet</title>
+
+    <style>
+        div {
+            background-color: cadetblue;
+            color: crimson;
+        }
+
+        .selector {
+            background-color: brown;
+            color: black;
+        }
+
+        #name {
+            color: burlywood;
+            background-color: darkgreen;
+        }
+
+        div[name="sample"] {
+            background-color: grey;
+            color: darkgreen;
+        }
+
+        .para{
+            color: magenta;
+            background-color: lightseagreen;
+        }
+        .para,div[name="sample"]{
+            color: navy;
+            background-color:darkorange
+        }
+
+    </style>
+</head>
+
+<body>
+    <div style="background-color: burlywood; color: grey;">
+        <h2>Inline styling</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipis
+            icing elit. Nihil, perferendis
+        </p>
+    </div>
+    <div>
+        <h2>Selectors</h2>
+    </div>
+    <div>
+        <h2>Element Selector</h2>
+        <p>
+            Lorem ipsum dolor sit amet
+            consectetur adipisicing.
+        </p>
+    </div>
+    <div class="selector">
+        <h2>Class selector</h2>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, recusandae. Architecto repellat
+            aspernatur, adipisci assumenda qui illo officiis repellendus culpa explicabo sapiente aut co
+            nsectetur placeat beatae? Eaque, ea! Natus, quia!
+        </p>
+    </div>
+    <div id="name">
+        <h2>Id selector</h2>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, recusandae. Architecto repellat
+            aspernatur, adipisci assumenda qui illo officiis repellendus culpa explicabo sapiente aut co
+            nsectetur placeat beatae? Eaque, ea! Natus, quia!
+        </p>
+    </div>
+    <div name="sample">
+        <h2>attribute selector</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos blanditiis, molestiae facilis debitis
+            odio minus similique? Tempore officiis tenetur minus, nam ex sint voluptas quae, explicabo eveniet qui fuga?
+        </p>
+    </div>
+
+    <p class="para">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, error modi? Possimus, nostrum consequuntur
+        saepe nesciunt corrupti velit asperiores dolorem at neque? Modi ipsa possimus nam temporibus reprehenderit sequi
+        omnis.
+    </p>
+</body>
+</html>

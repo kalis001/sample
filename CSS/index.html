@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Internal Styling -->
+    <style>
+        /* Element selector */
+        div {
+            background-color: blue;
+            color: yellow;
+        }
+
+        /* Class Selector */
+        .demo {
+            background-color: red;
+            color: pink;
+        }
+
+        /* ID Selector */
+        #root {
+            background-color: cornflowerblue;
+            color: goldenrod;
+        }
+
+        /* Attribute Selector */
+        div[title="sample"] {
+            background-color: crimson;
+            color: cyan;
+        }
+
+        div[data-hari="value"]{
+            background-color: coral;
+        }
+
+        /* Universal Selector */
+        /* *{
+            background-color: green;
+        } */
+
+        /* Grouping Selector */
+        .demo,
+        #root {
+            background-color: slateblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        CSS => Casecading Style Sheet
+        CSS Types:
+        1. Inline => Style Attribute
+        2. Internal => Style tag > Selectors
+        3. External => CSS File (link tag)  > selectors
+
+        Selectors:
+        1. Element Selector (tagname)
+        2. Class Selector (.)
+        3. id Selector (#)
+        4. Attribute Selector ([attribute])
+        5. Universal Selector (*)
+        6. Grouping Selector (,)
+    -->
+
+
+    <!-- Inline Styling -->
+    <div style="background-color: aqua; color: red;">
+        <h1>Inline Styling</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatum ut odit voluptates sed nulla. Sint
+            consequuntur assumenda exercitationem eaque ducimus, culpa ratione maxime numquam cumque earum, fuga quos
+            mollitia.</p>
+    </div>
+
+    <div>
+        <h1>Element Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nemo sequi tenetur perspiciatis velit
+            illo? Enim nemo veniam error placeat. Aspernatur ipsa quibusdam, quo nam veniam eos ducimus dolorem rem.</p>
+    </div>
+
+    <div class="demo">
+        <h1>Class Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nemo sequi tenetur perspiciatis velit
+            illo? Enim nemo veniam error placeat. Aspernatur ipsa quibusdam, quo nam veniam eos ducimus dolorem rem.</p>
+    </div>
+
+    <div id="root">
+        <h1>ID Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nemo sequi tenetur perspiciatis velit
+            illo? Enim nemo veniam error placeat. Aspernatur ipsa quibusdam, quo nam veniam eos ducimus dolorem rem.</p>
+    </div>
+    <div title="sample">
+        <h1>Attrinbute Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nemo sequi tenetur perspiciatis velit
+            illo? Enim nemo veniam error placeat. Aspernatur ipsa quibusdam, quo nam veniam eos ducimus dolorem rem.</p>
+    </div>
+
+    <div data-hari="value">
+        <h1>sample demo</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto deserunt delectus ex, nisi aspernatur
+            ea, eos itaque officiis dolores sequi ut vel laborum omnis illo tenetur! Inventore doloribus quisquam
+            tempora?</p>
+    </div>
+</body>
+</html>

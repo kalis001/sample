@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .container{
+            border: 2px solid;
+            margin: 10px;
+            width: 300px;
+            height: 400px;  
+            
+        }
+        img{
+            width: 300px;
+            height: 200px;
+        }
+        .whole-container{
+        display: flex;
+        flex-wrap: wrap;
+        }
+        .container:hover{
+            transition: 2s;
+        }
+        .two{
+            overflow: hidden;
+        }
+        .one:hover{
+            transform: rotatey(360deg);
+        }
+        .two:hover{
+            transform: scale(1.1);
+        }
+        .three:hover{
+            transform: skew(30deg);
+        }
+        .four:hover{
+            transform: rotatex(180deg)
+        }
+        .five:hover{
+            transform: scaleY(1.5);
+        }
+        .six:hover{
+            transform: matrix(1.1, 0, 0, 1, 10, 0);
+        }
+        .seven:hover{
+            transform: translate(-10px);
+        }
+        img:hover{
+            transform: scale(1.3);
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="whole-container">
+    <div class="container one">
+        <img src="./product-1-sm.png" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda laudantium voluptatum odio, fugiat dolore vel suscipit provident nisi voluptatibus eum consequuntur minima ea error accusamus ipsam nesciunt numquam repellat illo.</p>
+    </div>
+    <div class="container two">
+        <img src="./product-1-sm.png" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda laudantium voluptatum odio, fugiat dolore vel suscipit provident nisi voluptatibus eum consequuntur minima ea error accusamus ipsam nesciunt numquam repellat illo.</p>
+    </div>
+    <div class="container three">
+        <img src="./product-1-sm.png" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda laudantium voluptatum odio, fugiat dolore vel suscipit provident nisi voluptatibus eum consequuntur minima ea error accusamus ipsam nesciunt numquam repellat illo.</p>
+    </div>
+    <div class="container four">
+        <img src="./product-1-sm.png" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda laudantium voluptatum odio, fugiat dolore vel suscipit provident nisi voluptatibus eum consequuntur minima ea error accusamus ipsam nesciunt numquam repellat illo.</p>
+    </div>
+    <div class="container five">
+        <img src="./product-1-sm.png" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda laudantium voluptatum odio, fugiat dolore vel suscipit provident nisi voluptatibus eum consequuntur minima ea error accusamus ipsam nesciunt numquam repellat illo.</p>
+    </div>
+    <div class="container six">
+        <img src="./product-1-sm.png" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda laudantium voluptatum odio, fugiat dolore vel suscipit provident nisi voluptatibus eum consequuntur minima ea error accusamus ipsam nesciunt numquam repellat illo.</p>
+    </div>
+    <div class="container seven">
+        <img src="./product-1-sm.png" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda laudantium voluptatum odio, fugiat dolore vel suscipit provident nisi voluptatibus eum consequuntur minima ea error accusamus ipsam nesciunt numquam repellat illo.</p>
+    </div>
+</div>
+</body>
+</html>

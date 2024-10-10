@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let a = prompt();
+       let b = a.trimStart().length; 
+       let c = a.trimEnd().length;
+       let d = a.trim().length
+
+
+       if (b<a.length || c<a.length){
+           alert("White space found")
+            //    if(d == b && d == c && d!==c && d!==b ){
+            //        alert("whitespace found at both begining and end")
+            //    }
+            if (d==c && d !== b){
+                alert("White space found at the end")
+            }
+            if(d==b && d !== c){
+                alert("white space found at the start")
+            }
+            else if (d !==b && d!==c){
+                    alert("whitespace found at both begining and end")
+            }  
+           }
+           else{
+               alert("no white space found")
+           }
+    //    if (b<a.length || c<a.length){
+    //        alert("White space found")
+    //            if(b<a.length && c<a.length){
+    //                alert("whitespace found at both begining and end")
+    //            }
+    //            if (b<a.length){
+    //                alert("White space found at the begining")
+    //            }
+    //            if(c<a.length){
+    //                alert("white space found at the end")
+    //            }
+    //        }
+    //        else{
+    //            alert("no white space found")
+    //        }
+
+    //   if (a.trimStart().length < a.length && a.trimEnd().length > a.length){
+    //     alert("valid string")
+    //     if (a.trimStart().length < a.length){
+    //         alert("White space found at begining")
+    //     }
+    //     else{
+    //         alert("whitespace found at end")
+    //     }
+    //   }
+    //   else{
+    //     alert("no whitespaces found");
+    //   }
+
+   
+
+    // if (b<a.length && c<a.length){
+    //     alert("whitespaces found")
+    // }
+    // else{
+    //     alert("no whitespaces found")
+    // }
+
+    
+    // if (b<a.length){
+    //         alert("White space found at begining")
+    //         if(c< a.length){
+    //             alert("white space found at the end")
+    //         }
+
+    //         // else if(b>a.length && c>a.length)
+    //         // {
+    //         //     alert("White spaces found at both begining and end")
+    //         // }
+    //     }
+    //     else{
+    //         alert("no white space found")
+    //     }
+
+
+         
+
+      
+       
+    </script>
+</body>
+</html>

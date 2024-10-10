@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">
+        Lorem ipsum,<br> dolor <b>sit amet consectetur adipisicing elit. Quas est rem repellat? Rem necessitatibus quaerat, a nam dolore placeat fugit</b> obcaecati mollitia optio fugiat nulla, ut ea porro! Unde aut quos minima sint iste repellendus <br>deserunt odio? Maiores, qui quos.
+    </p>
+    <h1 id = "demo"></h1>
+    <button onclick="fun1()">Inner html</button>
+    <button onclick="fun2()">Inner Text</button>
+    <button onclick="fun3()">Inner Content</button>
+
+    <script>
+        function fun1(){
+            const click = document.getElementById('para').innerHTML
+            document.getElementById('demo').innerText = click
+        }
+        function fun2(){
+            const click = document.getElementById('para').innerText
+            document.getElementById('demo').innerText = click
+        }
+        function fun3(){
+            const click = document.getElementById('para').textContent
+            document.getElementById('demo').innerText = click
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="changeHeading()">Click To View</button>
+    <h1 id="newhead">Change Another Heading</h1>
+
+    <script>
+
+        function changeHeading(){
+           let a = document.getElementById('newhead').innerHTML='Changed to new heading'
+           return(a)
+        }
+
+        function egFunction(){
+            let a = 10;
+            return(a)  
+        }
+        console.log(egFunction());
+
+        //calling 
+
+        let count = num(5,6)
+        function num(a,b){
+            return a+b
+        }
+        console.log(count);
+        
+        //arrow function
+
+        let c = 'hello'
+
+        c = () =>{
+            return "hello world"
+        } 
+        
+        console.log(c());
+        
+       
+    </script>
+</body>
+</html>

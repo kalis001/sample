@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .container {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: lightpink;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(300px, 500px));
+            justify-content: space-around;
+        }
+
+        .card {
+            position: relative;
+            border: 5px solid lightgreen;
+            background-color: lightsalmon;
+            border-radius: 15px;
+        }
+
+        .card4 {
+            grid-row: 2/span 2;
+        }
+
+        .card5 {
+            grid-column: 2 /span 2;
+        }
+
+        .card1 {
+            grid-row: 1;
+            grid-column: 2;
+        }
+
+        @media(max-width:900px) {
+            .container {
+                grid-template-columns: repeat(2, minmax(300px, 500px));
+            }
+
+            .card5 {
+                grid-column: 2 /span 1;
+                grid-row: 2 / span 2;
+            }
+
+            .card9{
+                grid-column: 1 /span 2;
+            }
+        }
+
+        @media(max-width:590px){
+            .container {
+                grid-template-columns: repeat(1, minmax(300px, 500px));
+            }
+
+            .card5 {
+                grid-column: 1 /span 1;
+                grid-row: 2 / span 1;
+            }
+
+            .card9{
+                grid-column: 1 /span 1;
+            }
+            .card1{
+                grid-column: 1;
+
+            }
+            .card2{
+                grid-column: 1 ;
+            }
+            .card4{
+                grid-column: 1 ;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card card1">
+            <h1>heading 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit magni quod voluptatibus! Maiores ex ea
+                enim quisquam officia sapiente omnis cum voluptas harum fugiat eos voluptatibus ut incidunt, nemo error!
+            </p>
+        </div>
+        <div class="card card2">
+            <h1>heading 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit magni quod voluptatibus! Maiores ex ea
+                enim quisquam officia sapiente omnis cum voluptas harum fugiat eos voluptatibus ut incidunt, nemo error!
+            </p>
+        </div>
+        <div class="card card3">
+            <h1>heading 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit magni quod voluptatibus! Maiores ex ea
+                enim quisquam officia sapiente omnis cum voluptas harum fugiat eos voluptatibus ut incidunt, nemo error!
+            </p>
+        </div>
+        <div class="card card4">
+            <h1>heading 4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit magni quod voluptatibus! Maiores ex ea
+                enim quisquam officia sapiente omnis cum voluptas harum fugiat eos voluptatibus ut incidunt, nemo error!
+            </p>
+        </div>
+        <div class="card card5">
+            <h1>heading 5</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit magni quod voluptatibus! Maiores ex ea
+                enim quisquam officia sapiente omnis cum voluptas harum fugiat eos voluptatibus ut incidunt, nemo error!
+            </p>
+        </div>
+        <div class="card">
+            <h1>heading 6</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit magni quod voluptatibus! Maiores ex ea
+                enim quisquam officia sapiente omnis cum voluptas harum fugiat eos voluptatibus ut incidunt, nemo error!
+            </p>
+        </div>
+        <div class="card card7">
+            <h1>heading 7</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit magni quod voluptatibus! Maiores ex ea
+                enim quisquam officia sapiente omnis cum voluptas harum fugiat eos voluptatibus ut incidunt, nemo error!
+            </p>
+        </div>
+        <div class="card card8">
+            <h1>heading 8</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit magni quod voluptatibus! Maiores ex ea
+                enim quisquam officia sapiente omnis cum voluptas harum fugiat eos voluptatibus ut incidunt, nemo error!
+            </p>
+        </div>
+        <div class="card card9">
+            <h1>heading 9</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit magni quod voluptatibus! Maiores ex ea
+                enim quisquam officia sapiente omnis cum voluptas harum fugiat eos voluptatibus ut incidunt, nemo error!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

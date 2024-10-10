@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        function man(name, age, gender){
+            this.Name = name,
+            this.Age = age,
+            this.Gender = gender,
+            this.city ="coimbatore"
+
+            this.nameAge = function(){
+                return this.Name + this.Age
+            }
+        }
+        
+        
+
+        let g = new man("kishore","22","male")
+
+        g.fullname = "kishore Kumar"
+        console.log(g.fullname);
+        
+        console.log(g);
+        console.log(g.city);
+
+        
+        
+    </script>
+</body>
+</html>

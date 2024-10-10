@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <input type="text" name="" id="inp">
+    <button onclick="show()">Submit</button> -->
+    <script>
+        function show() {
+            const input = document.getElementById('inp').value
+            // const g =input.value
+            console.log(input);
+
+        }
+
+        // console.log(input);
+
+        // Arrays
+        
+        let a = ["abi", "Kishore", "13", "Dinesh"]
+        let b = [["Arun", "parvathi"], ["dINESH", "yEMUNA"]]
+
+        // console.log(a[0]);
+        // console.log(a.length);
+
+        console.log(a.slice(0,2));
+        console.log(a.splice(0,1 ,"mugesh") ,a);
+        
+
+        // methods
+
+        console.log(a.at(1));
+        console.log(a.join("--"));
+        console.log(a.pop(), a);
+        console.log(a.push("23"), a);
+        console.log(a.shift(), a);
+        console.log(a.unshift("Abinaya"), a);
+         console.log(a.slice(0,1), a);
+         console.log(a.splice(0,1,"arun"),a);
+        console.log(a.copyWithin(2, 0));
+        console.log(b);
+
+        console.log(b.flat());
+        console.log(a.concat(b));
+        console.log(a.toString());
+
+    </script>
+</body>
+
+</html>

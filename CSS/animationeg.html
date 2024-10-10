@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container img{
+            position: absolute;
+            width: 200px;
+            border: 2px solid;
+            border-radius: 50%;
+            box-shadow: 15px 15px 25px rgb(49, 49, 49);
+
+            animation-name: dragon;
+            animation-duration: 3s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-timing-function:linear;
+        }
+        @keyframes dragon{
+            0%{
+                top: 0;
+                left: 0; 
+            }
+            25%{
+                top: 0;
+                left: 500px; 
+            }
+            50%{
+                top: 500px;
+                left: 500px;
+            }
+            75%{
+                top: 500px;
+                left: 0;
+            }
+            100%{
+                top: 0;
+                left:0;
+
+            }
+            
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./download.jpg" alt="">
+    </div>
+</body>
+</html>

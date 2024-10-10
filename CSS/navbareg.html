@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        .heading {
+            display: flex;
+            position: fixed;
+            background-color: rgb(59, 59, 59);
+            height: 9%;
+            width: 100%;
+            align-items: center;
+            overflow-x: scroll;
+
+        }
+
+        .heading::-webkit-scrollbar {
+            height: 13px;
+            background-color: antiquewhite;
+        }
+
+        .heading::-webkit-scrollbar-thumb {
+            background-color: rgb(127, 127, 127);
+            border-radius: 25px;
+        }
+
+        .heading>a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="heading">
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+        <a href="#">h&nbsp;Link</a>
+    </nav>
+
+    <style>
+        .navdrop{
+            position: fixed;
+            min-width: 100%;
+            height: 5%;
+            top: 8%;
+            display: flex;
+            list-style: none;
+            align-items: center;
+            background-color: black;
+        }
+        .navdrop li{
+            padding: 10px 10px;
+        }
+        .navdrop a{
+            text-decoration: none; 
+            padding: 10px;   
+            color: white;   
+               
+        }
+        .dropdown{
+            list-style: none;
+            position: absolute;
+            background-color: rgb(167, 167, 167);
+            width: 150px;
+            line-height: 2.5;
+            padding-bottom: 5px;
+            display: none;
+            padding: 0;
+            text-align: center;
+            
+        }
+        .navdrop li:hover{
+            background-color: rgb(116, 116, 117);
+        }
+        .dropdown-menu:hover .dropdown{
+            display: block;
+            
+        }
+       
+        
+    
+    </style>
+
+    <div class="navdrop">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li class="dropdown-menu"><a href="#">Dropdown</a>
+            <ul class="dropdown">
+                <li><a href="#">Dropdown 1</a></li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+                <li><a href="#">Dropdown 5</a></li>
+            </ul>
+        </li>
+    </div>
+
+    <style>
+        .sidebar{
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            width: 10%;
+            height: 86%;
+            top: 13%;
+            background-color: rgb(58, 51, 51);
+            line-height: 2.5;
+            overflow-y: scroll;
+        }
+        .sidebar>a{
+            text-decoration: none;
+            color: white;
+            text-align: center;
+        }
+        .sidebar::-webkit-scrollbar{
+            background-color: rgb(111, 104, 104);
+            width: 10px;
+        }
+        .sidebar::-webkit-scrollbar-thumb{
+            background-color: rgb(70, 70, 70);
+            border-radius: 15px;
+            
+        }
+        .item4{
+            padding: 0;
+            display: none;
+            background-color: rgb(112, 112, 112);
+            list-style: none;
+            text-align: center;
+            border-radius: 25px;
+            
+        }
+        .item4-menu:hover .item4{
+            display: block;
+        }
+        .sidebar>a:hover{
+            background-color: rgb(182, 182, 182);
+            border-radius: 25px;
+        }
+    </style>
+
+    <div class="sidebar">
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a class="item4-menu" href="">Side&nbsp;item 4
+            <ul class="item4">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+        </a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+        <a href="">Side&nbsp;item</a>
+    </div>
+</body>
+
+</html>

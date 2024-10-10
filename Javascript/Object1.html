@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function man(name, age, gen) {
+            this.Name = name,
+                this.Age = age,
+                this.Gender = gen
+                this.car1="BmW"
+                this.nameAge =function(){
+                    return this.Name  + this.Gender
+                }
+
+
+
+        }
+
+
+        let r = new man("kishore", "23", "M")
+        let t = new man("kumar", "27", "M")
+        
+        console.log(r.nameAge());
+        
+        // r.surname ="kishore kumar"
+
+        // man.prototype.surname ="kishore kumar"
+        // console.log(r.surname);
+        // console.log(r.car1);
+
+        // r.change =function (d){
+        //    return this.Age = d
+        // }
+        // r.change("25")
+        
+        // console.log(r.Age);
+        
+
+        // console.log(t.nameAge());
+
+        man.prototype.namee= function (x){
+            return this.Name = x
+        }
+       r.namee("thonas")
+        console.log(r.Name);
+        
+
+    </script>
+</body>
+</html>

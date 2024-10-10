@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Baskervville+SC&family=Montserrat+Subrayada:wght@400;700&display=swap');
+
+    * {
+        margin: 0;
+    }
+
+    body {
+        background-color: rgb(78, 30, 30);
+    }
+
+    .icons-list {
+        position: relative;
+        list-style: none;
+        display: flex;
+        background-color: black;
+        height: 50px;
+        align-items: center;
+        opacity: .5;
+    }
+
+    .icons-list img {
+        margin-right: 20px;
+    }
+
+    .login-button {
+        margin-left: 750px;
+        height: 50px;
+        width: 80px;
+        background-color: rgb(255, 0, 0);
+        color: white;
+        border: 0;
+    }
+    .login-button:hover{
+        background-color: rgba(85, 85, 85, 0.7);
+    }
+</style>
+
+<body>
+    <img class="bg-image" src="./bg.jpg" alt="">
+    <nav>
+
+        <ul class="icons-list">
+            <li>
+                <a href="">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAABD0lEQVR4nNXSzyrEURjG8WlqpkQJZRaDhZT8aZRcy5TEJSgXMDdA3IK4ArYTNizkBmzYiqFYUaKPTr2TX9OYGSzkqadO75/v6X3PyeX+hZDHEqpYD1cjlu8FMIddNHytRtTMtgMMYx/vetc79jDUhFRw1VL0hlNsYiO8FbGUyyr1VhLoIBN8xjZG45IixsLFiJWwg5dM32FK9OOsSY5Fr+AYr5nidD7CctQs4Dp6B5rjDWIEE7joYT/nGI+ewXZLr7c0PMZe0q1PLbl6p+dP81/iHqsoZHIFrOEhakrd/lIZk+hDDSfhWsRSrtz1U3YYs/M4HUBTuPGpO8x8GxSwadzGzuZ/BMnAFpN/BfkTfQB7Xy2YRwTXFwAAAABJRU5ErkJggg==">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAABD0lEQVR4nNXSzyrEURjG8WlqpkQJZRaDhZT8aZRcy5TEJSgXMDdA3IK4ArYTNizkBmzYiqFYUaKPTr2TX9OYGSzkqadO75/v6X3PyeX+hZDHEqpYD1cjlu8FMIddNHytRtTMtgMMYx/vetc79jDUhFRw1VL0hlNsYiO8FbGUyyr1VhLoIBN8xjZG45IixsLFiJWwg5dM32FK9OOsSY5Fr+AYr5nidD7CctQs4Dp6B5rjDWIEE7joYT/nGI+ewXZLr7c0PMZe0q1PLbl6p+dP81/iHqsoZHIFrOEhakrd/lIZk+hDDSfhWsRSrtz1U3YYs/M4HUBTuPGpO8x8GxSwadzGzuZ/BMnAFpN/BfkTfQB7Xy2YRwTXFwAAAABJRU5ErkJggg==">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAABD0lEQVR4nNXSzyrEURjG8WlqpkQJZRaDhZT8aZRcy5TEJSgXMDdA3IK4ArYTNizkBmzYiqFYUaKPTr2TX9OYGSzkqadO75/v6X3PyeX+hZDHEqpYD1cjlu8FMIddNHytRtTMtgMMYx/vetc79jDUhFRw1VL0hlNsYiO8FbGUyyr1VhLoIBN8xjZG45IixsLFiJWwg5dM32FK9OOsSY5Fr+AYr5nidD7CctQs4Dp6B5rjDWIEE7joYT/nGI+ewXZLr7c0PMZe0q1PLbl6p+dP81/iHqsoZHIFrOEhakrd/lIZk+hDDSfhWsRSrtz1U3YYs/M4HUBTuPGpO8x8GxSwadzGzuZ/BMnAFpN/BfkTfQB7Xy2YRwTXFwAAAABJRU5ErkJggg==">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAABD0lEQVR4nNXSzyrEURjG8WlqpkQJZRaDhZT8aZRcy5TEJSgXMDdA3IK4ArYTNizkBmzYiqFYUaKPTr2TX9OYGSzkqadO75/v6X3PyeX+hZDHEqpYD1cjlu8FMIddNHytRtTMtgMMYx/vetc79jDUhFRw1VL0hlNsYiO8FbGUyyr1VhLoIBN8xjZG45IixsLFiJWwg5dM32FK9OOsSY5Fr+AYr5nidD7CctQs4Dp6B5rjDWIEE7joYT/nGI+ewXZLr7c0PMZe0q1PLbl6p+dP81/iHqsoZHIFrOEhakrd/lIZk+hDDSfhWsRSrtz1U3YYs/M4HUBTuPGpO8x8GxSwadzGzuZ/BMnAFpN/BfkTfQB7Xy2YRwTXFwAAAABJRU5ErkJggg==">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAABD0lEQVR4nNXSzyrEURjG8WlqpkQJZRaDhZT8aZRcy5TEJSgXMDdA3IK4ArYTNizkBmzYiqFYUaKPTr2TX9OYGSzkqadO75/v6X3PyeX+hZDHEqpYD1cjlu8FMIddNHytRtTMtgMMYx/vetc79jDUhFRw1VL0hlNsYiO8FbGUyyr1VhLoIBN8xjZG45IixsLFiJWwg5dM32FK9OOsSY5Fr+AYr5nidD7CctQs4Dp6B5rjDWIEE7joYT/nGI+ewXZLr7c0PMZe0q1PLbl6p+dP81/iHqsoZHIFrOEhakrd/lIZk+hDDSfhWsRSrtz1U3YYs/M4HUBTuPGpO8x8GxSwadzGzuZ/BMnAFpN/BfkTfQB7Xy2YRwTXFwAAAABJRU5ErkJggg==">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAABD0lEQVR4nNXSzyrEURjG8WlqpkQJZRaDhZT8aZRcy5TEJSgXMDdA3IK4ArYTNizkBmzYiqFYUaKPTr2TX9OYGSzkqadO75/v6X3PyeX+hZDHEqpYD1cjlu8FMIddNHytRtTMtgMMYx/vetc79jDUhFRw1VL0hlNsYiO8FbGUyyr1VhLoIBN8xjZG45IixsLFiJWwg5dM32FK9OOsSY5Fr+AYr5nidD7CctQs4Dp6B5rjDWIEE7joYT/nGI+ewXZLr7c0PMZe0q1PLbl6p+dP81/iHqsoZHIFrOEhakrd/lIZk+hDDSfhWsRSrtz1U3YYs/M4HUBTuPGpO8x8GxSwadzGzuZ/BMnAFpN/BfkTfQB7Xy2YRwTXFwAAAABJRU5ErkJggg==">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAABD0lEQVR4nNXSzyrEURjG8WlqpkQJZRaDhZT8aZRcy5TEJSgXMDdA3IK4ArYTNizkBmzYiqFYUaKPTr2TX9OYGSzkqadO75/v6X3PyeX+hZDHEqpYD1cjlu8FMIddNHytRtTMtgMMYx/vetc79jDUhFRw1VL0hlNsYiO8FbGUyyr1VhLoIBN8xjZG45IixsLFiJWwg5dM32FK9OOsSY5Fr+AYr5nidD7CctQs4Dp6B5rjDWIEE7joYT/nGI+ewXZLr7c0PMZe0q1PLbl6p+dP81/iHqsoZHIFrOEhakrd/lIZk+hDDSfhWsRSrtz1U3YYs/M4HUBTuPGpO8x8GxSwadzGzuZ/BMnAFpN/BfkTfQB7Xy2YRwTXFwAAAABJRU5ErkJggg==">
+                </a>
+            </li>
+            <button class="login-button">Login</button>
+        </ul>
+    </nav>
+    <style>
+        .name {
+            position: relative;
+        }
+
+        .bg-image {
+            position: absolute;
+            width: 100%;
+            height: 80%;
+        }
+
+        .name {
+            margin-top: 30px;
+            color: white;
+            margin-left: 50px;
+        }
+
+        .nav-two {
+            position: relative;
+            background-color: red;
+            height: 65px;
+            margin-left: 45px;
+            margin-right: 20px;
+            border-radius: 5px;
+            border: 1px solid;
+            margin-top: 20px;
+
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            padding: 25px;
+            gap: 30px;
+
+        }
+
+        .nav-menu li>a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .search-bar button {
+            background-color: rgba(85, 85, 85, 0.8);
+            margin-left: 130px;
+        }
+
+
+
+        .name-one {
+            font-size: 40px;
+            font-family: "Baskervville SC", serif;
+            letter-spacing: 4px;
+
+        }
+
+        .addict {
+            color: red;
+        }
+
+        .name-two {
+            font-size: 18px;
+            margin-left: 65px;
+            letter-spacing: 4px;
+            color: red;
+            font-family: "Baskervville SC", serif;
+
+        }
+        .home-menu,
+        .clanmembers-menu,
+        .portfolio-menu,
+        .blog-menu {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .home-menu li,
+        .clanmembers-menu li,
+        .portfolio-menu li,
+        .blog-menu li {
+            background-color: rgb(64, 63, 63);
+            position: relative;
+            font-size: 12px;
+            right: 20px;
+            top: 20px;
+            color: white;
+            border: 1px solid black;
+            padding: 15px 20px;
+        }
+
+        .home:hover .home-menu,
+        .clanmembers:hover .clanmembers-menu,
+        .portfolio:hover .portfolio-menu,
+        .blog:hover .blog-menu {
+            display: block;
+        }
+
+        .home-menu li:hover,
+        .clanmembers-menu li:hover,
+        .portfolio-menu li:hover,
+        .blog-menu li:hover {
+            color: red;
+            background-color: rgb(55, 54, 54);
+            transition: .5s;
+        }
+    </style>
+    <div>
+
+        <div class="name">
+            <h1 class="name-one">Game <span class="addict">Addict</span></h1>
+            <h2 class="name-two">GAMING THEME</h2>
+        </div>
+        <nav class="nav-two">
+            <ul class="nav-menu">
+                <li class="home"><a href="">Home</a>
+                    <ul class="home-menu">
+                        <li>PORTFOLIO VERSION</li>
+                        <li>MAGAZINE VERSION</li>
+                    </ul>
+                </li>
+                <li><a href="">Matches</a></li>
+                <li class="clanmembers"><a href="">Clan Members</a>
+                    <ul class="clanmembers-menu">
+                        <li>MEMBERS</li>
+                        <li>INDIVIDUAL MEMBERS</li>
+                    </ul>
+                </li>
+                <li class="portfolio"><a href="">Portfolio</a>
+                    <ul class="portfolio-menu">
+                        <li>SINGLE LEFT SIDEBAR</li>
+                        <li>SINGLE RIGHT SIDEBAR</li>
+                        <li>PORTFOLIO SINGLE EXT.</li>
+                        <li>PORTFOLIO SINGLE GALLERY</li>
+                    </ul>
+                </li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Forums</a></li>
+                <li><a href="">Shop</a></li>
+                <li class="blog"><a href="">Blog</a>
+                    <ul class="blog-menu">
+                        <li>BLOG ISOTOPE</li>
+                        <li>BLOG RIGHT SIDEBAR</li>
+                        <li>BLOG LEFT SIDEBAR</li>
+                        <li>BLOG FULL WIDTH</li>
+                    </ul>
+                </li>
+                <li><a href="">Contact</a></li>
+                <li class="search-bar"><a href=""><button><img width="25" height="25" src="https://img.icons8.com/ios-filled/100/FFFFFF/search--v1.png" alt="search--v1"/></button></a></li>
+            </ul>
+        </nav>
+
+        <style>
+            .content {
+                position: relative;
+                width: 480px;
+                left: 650px;
+                top: 130px;
+            }
+
+            .first-line {
+                color: red;
+                font-weight: 600;
+                font-size: 25px;
+            }
+
+            .second-line {
+                color: white;
+                font-size: 50px;
+            }
+
+            .third-line {
+                color: white;
+                font-weight: bold;
+                margin-bottom: 30px;
+
+            }
+
+            .read-more {
+                font-family: "Baskervville SC", serif;
+                padding: 15px 25px;
+                background-color: rgb(254, 51, 37);
+                color: white;
+                font-weight: bold;
+                border: none;
+                border-radius: 5px;
+
+            }
+            .read-more:hover{
+                background-color: rgba(85, 85, 85, 0.7);
+                transition: .5s;
+            }
+        </style>
+
+
+        <div class="content">
+            <p class="first-line">CREATE AND MANAGE</p>
+            <P class="second-line">TEAM MATCHES</P>
+            <P class="third-line">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                impedit quo minus id quod maxime placeat facere possimus.</P>
+            <button class="read-more">READ MORE</button>
+        </div>
+    </div>
+
+    <style>
+        .cards {
+            margin-top: 250px;
+            display: flex;
+            position: absolute;
+            margin-left: 45px;
+            background-size: cover;
+            background-position: center;
+            overflow-x: scroll;
+            width: 90%;
+        }
+        .cards::-webkit-scrollbar{
+            height: 10px;
+            width: 50px;
+            background-color: rgb(87, 81, 81);
+        }
+        .cards::-webkit-scrollbar-thumb{
+            background-color: red;
+        }
+        .card {
+            position: relative;
+            width: 280px;
+            height: 280px;
+        }
+
+        .one {
+            background-image: url(./img1.jpg);
+        }
+
+        .two {
+            background: url(./img2.jpg);
+        }
+
+        .three {
+            background: url(./img3.jpg);
+        }
+
+        .four {
+            background: url(./img4.jpg);
+        }
+
+        .five {
+            background: url(./img5.jpg);
+        }
+
+        .six {
+            background: url(img6.jpg);
+        }
+
+        .seven {
+            background: url(./img7.jpg);
+        }
+
+        .eight {
+            background: url(./img8.jpg);
+        }
+
+        .card-tag {
+            background-color: red;
+            width: 80px;
+            color: white;
+            padding: 5px 8px;
+            border-radius: 2px;
+            position: relative;
+            top: 15px;
+            left: 15px;
+            font-family: "Baskervville SC", serif;
+            font-weight: bold;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .card-content {
+            width: 230px;
+            margin: 15px;
+            position: relative;
+            top: 110px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            font-size: 15px;
+            transition: all .3s;
+
+        }
+        .card::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 60%;
+            bottom: 0;
+            opacity: 0;
+            transition: opacity .3s;
+            background: linear-gradient(transparent, #ff0000);
+        }
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .card:hover .card-content {
+            transform: translatey(-10px);
+        }
+
+        .lastline {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+
+    <div class="cards">
+        <div class="card one">
+            <p class="card-tag">ADVENTURE</p>
+            <div class="card-content">
+                <p>Lorem ipsum dolor sit theeee amet consectetur.</p>
+                <p>Lorem ipsum dolor sit theeeee amet consectetur.</p>
+                <div class="lastline">
+                    <p>4085days age</p>
+                    <p>comments</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card two">
+            <p class="card-tag">ADVENTURE</p>
+            <div class="card-content">
+                <p>Lorem ipsum dolor sit theeee amet consectetur.</p>
+                <p>Lorem ipsum dolor sit theeeee amet consectetur.</p>
+                <div class="lastline">
+                    <p>4085days age</p>
+                    <p>comments</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card three">
+            <p class="card-tag">ADVENTURE</p>
+            <div class="card-content">
+                <p>Lorem ipsum dolor sit theeee amet consectetur.</p>
+                <p>Lorem ipsum dolor sit theeeee amet consectetur.</p>
+                <div class="lastline">
+                    <p>4085days age</p>
+                    <p>comments</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card four">
+            <p class="card-tag">ADVENTURE</p>
+            <div class="card-content">
+                <p>Lorem ipsum dolor sit theeee amet consectetur.</p>
+                <p>Lorem ipsum dolor sit theeeee amet consectetur.</p>
+                <div class="lastline">
+                    <p>4085days age</p>
+                    <p>comments</p>
+                </div>
+            </div>
+        </div>
+        <div class="card five">
+            <p class="card-tag">ADVENTURE</p>
+            <div class="card-content">
+                <p>Lorem ipsum dolor sit theeee amet consectetur.</p>
+                <p>Lorem ipsum dolor sit theeeee amet consectetur.</p>
+                <div class="lastline">
+                    <p>4085days age</p>
+                    <p>comments</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card six">
+            <p class="card-tag">ADVENTURE</p>
+            <div class="card-content">
+                <p>Lorem ipsum dolor sit theeee amet consectetur.</p>
+                <p>Lorem ipsum dolor sit theeeee amet consectetur.</p>
+                <div class="lastline">
+                    <p>4085days age</p>
+                    <p>comments</p>
+                </div>
+            </div>
+        </div>
+        <div class="card seven">
+            <p class="card-tag">ADVENTURE</p>
+            <div class="card-content">
+                <p>Lorem ipsum dolor sit theeee amet consectetur.</p>
+                <p>Lorem ipsum dolor sit theeeee amet consectetur.</p>
+                <div class="lastline">
+                    <p>4085days age</p>
+                    <p>comments</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card eight">
+            <p class="card-tag">ADVENTURE</p>
+            <div class="card-content">
+                <p>Lorem ipsum dolor sit theeee amet consectetur.</p>
+                <p>Lorem ipsum dolor sit theeeee amet consectetur.</p>
+                <div class="lastline">
+                    <p>4085days age</p>
+                    <p>comments</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .news-container {
+            top: 600px;
+            left: 45px;
+            position: relative;
+            width: 700px;
+        }
+
+        .news-header {
+            padding: 20px;
+            background-color: rgb(241, 42, 42);
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .news-menu {
+            display: flex;
+            gap: 20px;
+            background-color: white;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+
+        .news-menu a {
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+            background-color: rgb(47, 46, 46);
+            padding: 10px 15px;
+            border-radius: 20px;
+        }
+
+        .news-menu a:hover {
+            background-color: rgb(242, 34, 34);
+            transition: .5s;
+        }
+
+        .news-one,
+        .days-ago,
+        .one-head {
+            display: flex;
+        }
+
+        .news-one {
+            background-color: white;
+            padding-top: 15px;
+        }
+
+        .one-head {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 20px;
+        }
+
+        .one-head a {
+            color: white;
+            background-color: rgb(207, 27, 27);
+            font-size: 13px;
+            text-decoration: none;
+            padding: 8px 15px;
+            font-weight: bold;
+
+        }
+
+        .news-one p {
+            color: rgb(106, 103, 103);
+        }
+
+        .days-ago {
+            margin-top: 10px;
+            gap: 40px;
+        }
+
+        .days-ago p {
+            color: rgb(0, 0, 0);
+        }
+
+        .news-content {
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+    </style>
+
+    <div>
+        <div class="news-container">
+            <div class="news-header">
+                LATEST NEWS
+            </div>
+            <div class="news-menu">
+                <a href="">SHOOTERS</a>
+                <a href="">RPG</a>
+                <a href="">RACING</a>
+                <a href="">ONLINE</a>
+                <a href="">CLASS</a>
+            </div>
+            <div class="news-one">
+                <div>
+                    <img width="220px" height="150px" src="./img1.jpg" alt="">
+                </div>
+                <div class="news-content">
+                    <div class="one-head">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <a href="#">SHOOTERS</a>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro minima eligendi ipsum adipisci
+                        maxime
+                        repudiandae ullam, suscipit quibusdam tenetur nostrum! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Facere, magni.</p>
+                    <div class="days-ago">
+                        <p>4088 days ago</p>
+                        <p>No comments</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="news-one">
+                <div>
+                    <img width="220px" height="150px" src="./img2.jpg" alt="">
+                </div>
+                <div class="news-content">
+                    <div class="one-head">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <a href="#">SHOOTERS</a>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro minima eligendi ipsum adipisci
+                        maxime
+                        repudiandae ullam, suscipit quibusdam tenetur nostrum! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Facere, magni.</p>
+                    <div class="days-ago">
+                        <p>4088 days ago</p>
+                        <p>No comments</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="news-one">
+                <div>
+                    <img width="220px" height="150px" src="./img3.jpg" alt="">
+                </div>
+                <div class="news-content">
+                    <div class="one-head">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <a href="#">SHOOTERS</a>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro minima eligendi ipsum adipisci
+                        maxime
+                        repudiandae ullam, suscipit quibusdam tenetur nostrum! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Facere, magni.</p>
+                    <div class="days-ago">
+                        <p>4088 days ago</p>
+                        <p>No comments</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="news-one">
+                <div>
+                    <img width="220px" height="150px" src="./img4.jpg" alt="">
+                </div>
+                <div class="news-content">
+                    <div class="one-head">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <a href="#">SHOOTERS</a>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro minima eligendi ipsum adipisci
+                        maxime
+                        repudiandae ullam, suscipit quibusdam tenetur nostrum! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Facere, magni.</p>
+                    <div class="days-ago">
+                        <p>4088 days ago</p>
+                        <p>No comments</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="news-one">
+                <div>
+                    <img width="220px" height="150px" src="./img5.jpg" alt="">
+                </div>
+                <div class="news-content">
+                    <div class="one-head">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <a href="#">SHOOTERS</a>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro minima eligendi ipsum adipisci
+                        maxime
+                        repudiandae ullam, suscipit quibusdam tenetur nostrum! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Facere, magni.</p>
+                    <div class="days-ago">
+                        <p>4088 days ago</p>
+                        <p>No comments</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <style>
+        .next-match {
+            position: relative;
+            left: 770px;
+            bottom: 360px;
+            width: 310px;
+            border: 10px solid;
+            padding-bottom: 30px;
+            background: linear-gradient(transparent, black);
+
+        }
+
+        .match-header {
+            background-color: red;
+            color: white;
+            padding: 20px 20px;
+            font-weight: bold;
+        }
+
+        .fnatic,
+        .skgaming {
+            color: white;
+            text-align: center;
+        }
+
+        .fnatic {
+            margin-top: 30px;
+        }
+
+        .skgaming {
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+
+        .timetable {
+            margin-left: 70px;
+        }
+
+        thead {
+            color: red;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        tbody {
+            color: grey;
+            text-align: center;
+
+        }
+
+        .bf {
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            width: 30px;
+            background-color: rgb(241, 25, 25);
+            padding: 5px 15px;
+            margin-top: 30px;
+            margin-left: 60px;
+        }
+    </style>
+
+
+
+    <div class="next-match">
+        <div class="match-header">
+            NEXT TEAM MATCH
+        </div>
+        <div>
+            <div class="fnatic">
+                <img src="./Fnatic-140x140.jpg" alt="" width="80px">
+                <p>FNATIC</p>
+            </div>
+            <div class="skgaming">
+                <img src="./skgaming-140x140.png" alt="" width="80px">
+                <p>SK GAMING</p>
+            </div>
+        </div>
+        <div class="timetable">
+            <div class="bf">BF4</div>
+            <table>
+                <thead>
+                    <tr>
+                        <td>MONTH</td>
+                        <td>DAY</td>
+                        <td>HOUR</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>FEBRURAY</td>
+                        <td>16</td>
+                        <td>2:10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <style>
+        .clan-matches {
+            position: relative;
+            left: 770px;
+            bottom: 350px;
+            width: 330px;
+            background: linear-gradient(transparent, rgb(0, 0, 0));
+
+        }
+
+        .clanmatches-header {
+            color: white;
+            background-color: rgb(236, 23, 23);
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        .clanmatches-menu {
+            display: flex;
+            background-color: rgb(245, 78, 78);
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 25px;
+            align-items: center;
+        }
+
+        .clanmatches-menu a {
+            text-decoration: none;
+            color: rgb(255, 2, 2);
+            font-size: 15px;
+            width: 70px;
+            text-align: center;
+        }
+
+        .clanmatches-menu a:hover {
+            background-color: rgb(18, 15, 15);
+            height: 25px;
+            color: white;
+        }
+
+        .match-one {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            margin-left: 10px;
+            padding-left: 20px;
+            color: white;
+            height: 70px;
+            margin-right: 10px;
+        }
+
+        .match-one:hover {
+            background-color: rgb(191, 36, 36);
+            background: linear-gradient(transparent, rgb(116, 38, 38));
+        }
+
+        .go {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .weeks-ago {
+            font-size: 12px;
+            color: red;
+        }
+
+        .all-matches {
+            border: 10px solid black;
+            height: 320px;
+        }
+    </style>
+
+    <div class="clan-matches">
+        <div class="clanmatches-header">
+            <p>CLAN MATCHES</p>
+        </div>
+        <div class="all-matches">
+            <div class="clanmatches-menu">
+                <a href="#">All</a>
+                <a href="#">CS:GO</a>
+                <a href="#">DOTA 2</a>
+            </div>
+
+            <div>
+                <div class="match-one">
+                    <div><img width="30px" src="./cm1.jpg" alt=""></div>
+                    <div class="timing">0:0</div>
+                    <div><img width="30px" src="./cm2.gif" alt=""></div>
+                    <div>
+                        <p class="go">CS:GO</p>
+                        <p class="weeks-ago">535 WEEKS AGO</p>
+                    </div>
+                </div>
+
+                <div class="match-one">
+                    <div><img width="30px" src="./cm3.jpg" alt=""></div>
+                    <div class="timing">28:34</div>
+                    <div><img width="30px" src="./cm2.gif" alt=""></div>
+                    <div>
+                        <p class="go">DOTA 2</p>
+                        <p class="weeks-ago">346 WEEKS AGO</p>
+                    </div>
+                </div>
+
+                <div class="match-one">
+                    <div><img width="30px" src="./cm4.jpg" alt=""></div>
+                    <div>0:0</div>
+                    <div><img width="30px" src="./cm2.gif" alt=""></div>
+                    <div>
+                        <p class="go">CS:GO</p>
+                        <p class="weeks-ago">339 WEEKS AGO</p>
+                    </div>
+                </div>
+
+                <div class="match-one">
+                    <div><img width="30px" src="./cm1.jpg" alt=""></div>
+                    <div>41:45</div>
+                    <div><img width="30px" src="./cm2.gif" alt=""></div>
+                    <div>
+                        <p class="go">DOTA 2</p>
+                        <p class="weeks-ago">535 WEEKS AGO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .tabbedpost-container {
+            position: relative;
+            width: 330px;
+            height: 150px;
+            background-color: black;
+            left: 770px;
+            bottom: 340px;
+        }
+
+        .tabbet-post {
+            background-color: rgb(226, 0, 0);
+            padding: 20px 10px;
+            color: white;
+            font-weight: bold;
+
+
+        }
+
+        .tabbedpost-menu {
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: #825454;
+            display: flex;
+
+        }
+
+        .tabbedpost-border {
+            border: 10px solid black;
+        }
+
+        .tabbedpost-menu a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(213, 42, 42);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            height: 30px;
+            width: 100px;
+        }
+
+        .tabbedpost-menu a:hover {
+            background-color: rgb(38, 37, 37);
+            color: white;
+            transition: .5s;
+        }
+
+        .adventure {
+            display: flex;
+            background-color: white;
+            font-weight: bold;
+            color: red;
+            padding-bottom: 15px;
+            border-bottom: 1px solid black;
+        }
+
+        .adventure:hover {
+            background: transparent;
+            transition: .5s;
+            color: white;
+        }
+
+        .adventure-content {
+            margin-left: 20px;
+            margin-top: 10px;
+
+        }
+    </style>
+
+
+    <div class="tabbedpost-container">
+        <div class="tabbet-post">
+            TABBED POSTS
+        </div>
+        <div class="tabbedpost-border">
+            <div class="tabbedpost-menu">
+                <a href="">ADVENTURE</a>
+                <a href="">ONLINE</a>
+                <a href="">RACING</a>
+            </div>
+            <div class="adventure">
+                <div class="adventure-img">
+                    <img width="80px" src="./img1.jpg" alt="">
+                </div>
+                <div class="adventure-content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, porro.</p>
+                    <p>readmore</p>
+                </div>
+            </div>
+            <div class="adventure">
+                <div class="adventure-img">
+                    <img width="80px" src="./img2.jpg" alt="">
+                </div>
+                <div class="adventure-content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, porro.</p>
+                    <p>readmore</p>
+                </div>
+            </div>
+            <div class="adventure">
+                <div class="adventure-img">
+                    <img width="80px" src="./img3.jpg" alt="">
+                </div>
+                <div class="adventure-content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, porro.</p>
+                    <p>readmore</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .bg-video {
+            left: 50px;
+        }
+
+        video {
+            position: absolute;
+            width: 1150px;
+
+        }
+
+        .video-content {
+            position: relative;
+            top: 300px;
+            width: 700px;
+            left: 400px;
+            border-right: 5px solid red;
+            line-height: 40px;
+        }
+
+        .bg1 {
+            font-size: 35px;
+            color: white;
+        }
+
+        .bg2 {
+            margin-left: 300px;
+            color: rgb(69, 68, 68);
+            font-size: 21px;
+            font-weight: bold;
+        }
+    </style>
+
+    <div class="bd-video">
+        <video width="1150px" src="./2715412-uhd_3840_2160_30fps.mp4" autoplay loop muted></video>
+        <div class="video-content">
+            <p class="bg1">AWESOME TEAM MADE WITH PASSSION</p>
+            <p class="bg2">CREATE AND MANAGE TEAM WARS</p>
+        </div>
+    </div>
+
+    <style>
+        .logo-container {
+            display: flex;
+            position: relative;
+            top: 700px;
+            gap: 100px;
+            overflow-x: scroll;
+            margin-top: 50px;
+        }
+
+        .logo-container::-webkit-scrollbar {
+            height: 8px;
+            background-color: rgb(211, 47, 47);
+        }
+
+        .logo-container::-webkit-scrollbar-thumb {
+            background-color: rgb(213, 68, 68);
+        }
+    </style>
+    <div class="logo-container">
+        <div><img src="./logo1.png" alt=""></div>
+        <div><img src="./logo2.png" alt=""></div>
+        <div><img src="./logo3.png" alt=""></div>
+        <div><img src="./logo1.png" alt=""></div>
+        <div><img src="./logo2.png" alt=""></div>
+        <div><img src="./logo3.png" alt=""></div>
+        <div><img src="./logo1.png" alt=""></div>
+    </div>
+
+    <style>
+        .final-nav {
+            display: flex;
+            position: relative;
+            top: 700px;
+            justify-content: end;
+            gap: 30px;
+            margin-left: 45px;
+            margin-right: 45px;
+            margin-top: 50px;
+            background-color: rgb(116, 12, 12);
+            padding: 15px;
+        }
+
+        .final-nav a {
+            background-color: rgb(43, 37, 37);
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .final-nav a:hover {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            transition: .5s;
+        }
+    </style>
+
+    <div class="final-nav">
+        <a href="">ALL</a>
+        <a href="">MODEL</a>
+        <a href="">MAPS</a>
+        <a href="">SKETCHES</a>
+    </div>
+
+    <style>
+        .image-grid {
+            grid-template-columns: repeat(3 minmax(300px, 500px));
+            position: relative;
+            top: 750px;
+        }
+    </style>
+
+    <div class="image-grid">
+        <div>
+            <img src="./card1.jpg" alt="">
+            <img src="./card2.jpg" alt="">
+            <img src="./card3.png" alt="">
+        </div>
+        <div>
+            <img src="./card3.png" alt="">
+            <img src="./card5.png" alt="">
+            <img src="./card5.png" alt="">
+        </div>
+        <div>
+            <img src="./card5.png" alt="">
+            <img src="./card5.png" alt="">
+            <img src="./card5.png" alt="">
+        </div>
+        <div>
+            <img src="./card5.png" alt="">
+            <img src="./card5.png" alt="">
+            <img src="./card5.png" alt="">
+        </div>
+    </div>
+
+    <style>
+        .forum {
+            background-color: rgb(5, 0, 13);
+            height: 500px;
+            position: relative;
+            top: 750px;
+            padding-top: 100px;
+            padding-left: 45px;
+
+        }
+
+        .forum-head {
+            width: 400px;
+            color: red;
+            font-weight: bold;
+            font-size: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgb(220, 48, 25);
+        }
+
+        .forum-content {
+            width: 400px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            padding-bottom: 10px;
+            padding-top: 5px;
+            border-bottom: 1px solid rgb(220, 48, 25);
+        }
+
+        .forum-content:hover,
+        .forum-content-last:hover {
+            color: red;
+            transition: .7s;
+        }
+
+        .forum-content-last {
+            width: 400px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            padding-bottom: 10px;
+            padding-top: 5px;
+        }
+    </style>
+
+    <div class="forum">
+        <div class="forum-head">
+            <p>FROM THE FORUM</p>
+        </div>
+        <div class="forum-content">
+            <p>Lorem, ipsum.</p>
+        </div>
+        <div class="forum-content">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="forum-content">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="forum-content">
+            <p>Lorem ipsum dolor </p>
+        </div>
+        <div class="forum-content-last">
+            <p>Lorem ipsum dolor Lorem, ipsum dolor Lorem ipsum dolor. </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

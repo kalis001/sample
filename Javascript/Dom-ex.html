@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1 id ="name">heading1</h1>
+<h1>heading2</h1>
+<h1>heading3</h1>
+<h1 id="one">heading4</h1>
+<h1 class="head5">heading5</h1>
+
+<p id="para"></p>
+
+<button onclick="show()">Show</button>
+
+<!-- <p id = "para"></p> -->
+    <script>
+       function show(){
+
+//by id name
+        // let a = document.getElementById('name').innerHTML = 'head is changed'
+
+
+//by class name
+        // let a = document.getElementsByClassName('head5')
+        //  document.getElementById('name').innerHTML ='dsfjd'
+
+//by tag name
+
+        let a = document.getElementsByTagName('h1')
+        document.getElementById('name').innerHTML = "terwter"
+
+        // let a = document.getElementsByTagName('h1')
+        // document.getElementById('one').innerHTML=a[0].innerHTML
+
+//Querry Selector
+
+        // let a = document.querySelector('#one')
+        // document.getElementById('para').innerHTML = a.innerHTML
+               }
+    </script>
+</body>
+</html>

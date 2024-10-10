@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let c = {
+            name: "kishore",
+            age: 21,
+            gender: "m"
+
+        }
+
+        // let ba = [{
+
+        // }]
+
+        console.log(c.age);
+
+        let d = {
+            name: "kishore",
+            age: 21,
+            gender: "m",
+            car: {
+                car1: "BMW",
+                car2: "AUDI",
+                car3: "Maruthi"
+            },
+
+        }
+        // console.log(d.car.car2);
+        console.log(d["car"]["car2"]);
+
+
+        let e = {
+            name: "kishore kokki ",
+            lname: "Kumar",
+            age: 21,
+            gender: "m",
+            car: {
+                car1: "BMW",
+                car2: "AUDI",
+                car3: "Maruthi"
+            },
+            fullname: function () {
+                return this.name + this.lname
+            }
+
+
+        }
+        console.log(e.fullname());
+
+
+
+        function man(name, age, gen) {
+            this.Name = name,
+                this.Age = age,
+                this.Gender = gen
+
+        }
+
+        let r = new man("kishore", "23", "M")
+        let t = new man("kumar", "27", "M")
+
+        // console.log();
+
+        let arr =[r,t]
+
+        console.log(arr);
+        
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
