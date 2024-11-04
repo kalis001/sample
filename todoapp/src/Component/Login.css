@@ -1,0 +1,8 @@
+.login {
+    background-color:skyblue;
+   height: 300px;
+   width: 100%;
+}
+.login h1{
+    color: red;
+}

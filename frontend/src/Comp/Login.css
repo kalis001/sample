@@ -1,0 +1,86 @@
+ @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spirax&display=swap');
+
+ .form {
+    height:100vh ;
+    width:100vw ;
+    background-image: url("images\ \(4\).jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    
+
+}
+
+.login {
+    box-shadow: 0 0 5px white;
+    height: 350px;
+    width: 300px;
+    border: 2px solid white; 
+    background-color: rgba(0, 0, 0, 0.336);
+    margin: 150px auto auto auto;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    
+
+    
+    
+
+
+}
+
+.logo {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: brown;
+    text-align: center;
+}
+
+.main {
+    margin: 30px 50px 10px 50px;
+}
+
+.main label {
+    color:aqua;
+    text-transform: uppercase;
+    display: block;
+    font-family: "Spirax", system-ui;
+    font-weight: 400;        
+    font-style: normal;
+      
+
+
+}
+
+.main input {
+    background-color: transparent;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0px;
+    width: 200px;
+    border-bottom: 2px solid white;
+}
+
+.main button {
+    color: rgb(167, 1, 1);
+    width: 200px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: darkgrey;
+    font-weight: 600;
+
+}
+
+::placeholder {
+    color: white;
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+
+}

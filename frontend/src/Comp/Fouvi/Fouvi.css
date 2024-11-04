@@ -1,0 +1,254 @@
+.tab{
+    margin: 10px 0px 10px 0px;
+}
+.tab1{
+    /* margin: 10px 0px 10px 0px; */
+}
+.tah1{
+    color: rgba(0, 0, 0, 0.842);
+    text-transform: capitalize;
+    font-size: 35px;
+    
+}
+.tah2{
+    color: rgba(0, 0, 0, 0.822);
+    font-size: 14px;
+    text-transform: capitalize;
+    
+}
+.conpara1{
+    font-size: 14px;
+}
+.tamar{
+    margin-top: -100%;
+    margin-left: 10px;
+    font-size: 25px;
+    gap: 10px;
+    width: 480px;
+    text-transform: uppercase;
+    color: rgb(209, 62, 9);
+ }
+ .tamar span{
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-left: 10px;
+    color: black;
+ }
+ .tai{
+    display: flex;
+    padding-top: 30px;
+    
+ }
+ .ship img{
+    padding-left: 30px;
+ }
+ .tai img{
+    margin-top: 10px;
+ }
+ .tai p{
+     padding-left: 20px;
+}
+.tai1{
+    display: flex;
+}
+.tai1 img{
+    margin-top: 10px;
+}
+.tai1 p{
+    padding-left: 20px;
+}
+.tai2{
+    display: flex;
+}
+.tai2 img{
+    margin-top: 10px;
+}
+.tai2 p{
+    padding-left: 20px;
+}
+.tai3{
+    display: flex;
+}
+.tai3 p{
+    padding-left: 20px;
+}
+.tai4{
+    margin: 20px 20px 10px 10px;
+}
+.tah3{
+    color:gray ;
+    font-size: 23px;
+    text-transform: capitalize;
+    
+}
+.tahspan{
+    color: red;
+    padding-left: 10px;
+    text-transform: capitalize;
+}
+.tahspan1{
+    font-size: 15px;
+    background-color: orangered;
+    font-family: 'Times New Roman', Times, serif;
+}
+.taibtn{
+    width: 410px;
+    margin-top: 20px;
+    height: 40px;
+    margin-left: 10px;
+    background-color:rgba(253, 61, 13, 0.993);
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight:bold;
+    opacity: 0.9;
+}
+.tah4{
+    font-size: 35px;
+    /* margin: 100px 10px 10px 300px; */
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+    font-weight: bold
+    
+}
+.tapara{
+    font-size: 24px;
+    /* margin: 20px 50px 10px 150px; */
+    text-align: center;
+    color: black;
+}
+.tapara1{
+    font-size: 24px;
+    text-align: center;
+    margin-top: -25px;
+    color: black;
+}
+.tapara2{
+    padding-top: 25px;
+    font-size: 15px;
+    padding-left: 30px;
+    text-align: right;
+    padding-right: 40px;
+}
+.tapic img{
+    padding-left: 40px;
+}
+.tah5{
+    /* margin: 100px 30px 10px 180px; */
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.tapara3{
+    text-align: center;
+    font-size: 23px;
+    padding-top: 20px;
+    /* text-shadow: 0 0 1px rgba(128, 128, 128, 0.322) */
+    color: black;
+}
+.tapara4{
+    text-align: center;
+    font-size: 23px;
+    margin-top: -25px;
+    color: black;
+    
+}
+.tah6,.tah8{
+    color: black;
+    font-weight: 600;
+    /* margin-left: 60px; */
+    @media (max-width: 767px) {
+        .t4s-img-child img {
+            max-width: var(--width-mb);
+        }
+    }
+}
+.enble{
+    font-weight: 700;
+}
+.tah7{
+    color: orangered;
+    opacity: 0.9;
+    font-weight: 600;
+    /* margin-left: -60px; */
+}
+.btna {
+    background-color:#f65131;
+    /* opacity: 0.9; */
+    border-radius: 8px;
+    width: 100px;
+    height: 35px;
+    border: none;
+    /* margin-left: -60px; */
+    margin-top: 30px;
+}
+.btna a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.btna:hover{
+    cursor: pointer;
+}
+.taqus{
+    
+    background-color: #f7dbd5;
+    height: 640px;
+    margin-top: 100px;
+    width: 100%;
+    border-radius: 10px;
+    
+} 
+.qush1{
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+.anh1{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.anpara{
+    font-size: 15px;
+    color: black !important;
+    background-color: #fff6f2 !important;
+    
+}
+.spanans{
+    padding-left: 50px;
+    color: black !important;
+}
+.anpara1{
+    /* background-color: #fff6f2; */
+    color: black !important;
+}
+.anpara2{
+    color: black !important;
+    /* padding-left: 10px; */
+    background-color: #fff6f2;
+}
+.anpara3{
+    color: black !important;
+    background-color: #fff6f2;
+    font-size: 16px;
+}
+.anspara4{
+    color: black !important;
+    background-color: #fff6f2;
+}
+.spanans2{
+    padding-left: 150px;
+    color: black !important;
+}.anspara5{
+    text-align: right;
+    color: black !important;
+    background-color: #fff6f2 !important;
+    font-size: 16px;
+}
+.spanans3{
+    padding-right: 400px;
+}
+
+

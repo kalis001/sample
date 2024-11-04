@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+
+    
+}
+.blackbgimage{
+    background-image: url('bg-01-b.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    width: 100vw;
+    
+
+}
+.blackdiv{
+    justify-content: space-around;
+    
+}
+.blackul{
+    display: inline-flex;
+    list-style: none;
+    padding-top: 20px;
+    margin-left: -70px;
+    
+}
+.blackul li a{
+    text-decoration: none;
+    color: white;
+    padding: 13px 15px;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px black ;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+
+}
+.blackul li a:hover{
+    border-bottom: 1px solid #ff4955;
+    color: #ff4955;
+    
+}
+
+li a.active{
+    color: #ff4955;
+    font-size: 18px;
+}
+.blackbtn{
+    margin-top: 0px;
+    width: 40px;
+    padding-top: 10px;
+    height: 30px;
+    border: none;
+
+
+}
+.bag{
+   
+   color: white ;
+   border-radius: 17px;
+   
+}
+.badge{
+    margin-top: 7px;
+    padding: 5px;
+    background-color: #fc3746;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100 to 400;
+  font-style: normal;
+  border-color: black;
+  
+
+}
+.blackcanvas{
+     width: 20px;
+}
+.blackp1{
+    color:#ff4955 ;
+    font-family: "Kaushan Script", handwriting;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-top: 200px;
+    text-shadow: 0 5px 5px black, 0 10px 10px black;
+      
+}
+.blackh1{
+  color: #ffffff;
+  font-family: "League Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+  text-align: center;
+  margin: 0px 35px 0px 35px;
+  line-height: 1;
+  font-size: 105px;
+  text-transform: uppercase;
+  text-shadow: 0 5px 5px black, 0 10px 10px black;
+
+}
+.blackspan{
+    color: #ff4955;
+}
+.blackbutton{
+    background-color: #fc3746;
+    border: none;
+    height: 50px;
+    width: 150px;
+    margin: 50px 100px 0px 430px;
+    
+}
+.blackbutton a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size:20px;
+    letter-spacing: 2px;
+    text-transform:uppercase ;
+    text-shadow: 0 0 3px black; 
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+.blackbutton:hover{
+    background-color: #ff4955;
+    transition: 2s;
+}
+.blackbutton:visited{
+    border: 1px double black;
+}
