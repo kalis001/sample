@@ -13,8 +13,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import Banks from './Component/hook/useContext/Bank';
 // import Domaccess from './Component/hook/useRef/Doaccess';
 // import Previous from './Component/hook/useRef/Previous';
-import Usefetch from './Component/hook/Customhook/Usefetch';
-import Customhook from './Component/hook/Customhook/Customhook';
+// import Usefetch from './Component/hook/Customhook/Usefetch';
+// import Customhook from './Component/hook/Customhook/Customhook';
 
 function App() {
 
@@ -40,7 +40,7 @@ function App() {
       {/* <Banks></Banks> */}
       {/* <Domaccess/> */}
       {/* <Previous/> */}
-      <Usefetch/><Customhook/>
+      {/* <Usefetch/><Customhook/> */}
 
     </div>
 

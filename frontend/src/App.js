@@ -25,6 +25,9 @@ import Domacess from './Comp/Hook/UseRef/Domacess';
 import Previous from './Comp/Hook/UseRef/Previous';
 import Customhook from './Comp/Hook/customhook/Customhook';
 import { Button } from '@mui/material';
+import Max from './Comp/Hook/useMemo/Max';
+import Maxi from './Comp/Hook/useMemo/Maxi';
+import Counter from './Comp/Counter/Counter';
 
 
 
@@ -78,10 +81,12 @@ function App() {
       {/* <Domacess/> */}
       {/* <Previous/> */}
       {/* <Customhook/> */}
-      <Button variant='contained' color='error' size='large' sx={{fontSize:30}}>add student</Button>
+      {/* <Button variant='contained' color='error' size='large' sx={{fontSize:30}}>add student</Button> */}
      
     
-   
+   {/* <Max/> */}
+   {/* <Maxi/> */}
+   <Counter/>
 
     </div>
 
