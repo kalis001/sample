@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="inp1">
+    <input type="text" name="" id="inp2">
+    <input type="text" name="" id="inp3">
+
+    <button onclick="post()">POST</button>
+    <button onclick="get()">GET</button>
+
+    <script>
+
+        inp1 = document.getElementById('inp1')
+        inp2 = document.getElementById('inp2')
+        inp3 = document.getElementById('inp3')
+
+        async function post() {
+            const data = {
+                name : inp1.value,
+                username : inp2.value,
+                password : inp3.value
+            }
+            try {
+                const post = await fetch('https://6718cce27fc4c5ff8f4b2101.mockapi.io/datas',{
+                    method : 'POST',
+                    headers : {'Content-Type':'Application/json'},
+                    body : JSON.stringify(data)
+                })
+            } catch (error) {
+                console.log(error);
+                
+            }
+        }
+
+        async function get() {
+            const data = await fetch('https://6718cce27fc4c5ff8f4b2101.mockapi.io/datas')
+            const res = await data.json()
+
+            console.log(res);
+            
+        }
+    </script>
+</body>
+</html>

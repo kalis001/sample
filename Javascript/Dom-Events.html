@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quas?</p>
+
+    <input type="text" name="" id="inp">
+    <h1 id="demo"></h1>
+    <button id="btn">Show</button>
+    <button id="btn1">Stop</button>
+
+    <script>
+        const inp =document.getElementById('inp')
+        const demo = document.getElementById('demo')
+
+        function display(){
+            demo.innerHTML =inp.value
+        }
+        inp.addEventListener("keyup" , display)
+        
+        document.getElementById('btn').onclick =()=>{
+            inp.addEventListener("keyup" , display)
+        }
+
+        document.getElementById('btn1').addEventListener("click" ,()=>{
+
+            inp.removeEventListener("keyup" , display)
+        })
+
+        const para =document.getElementById('para')
+
+        function mouse(){
+            para.style.backgroundColor ='red'
+        }
+
+        para.addEventListener("mouseenter", mouse)
+        para.addEventListener("mouseleave", ()=>{
+            para.style.backgroundColor ='white'
+        })
+        
+
+
+
+
+
+
+        // const btn = document.getElementById ('btn')
+        // const para = document.getElementById('para')
+
+    </script>
+    
+</body>
+</html>

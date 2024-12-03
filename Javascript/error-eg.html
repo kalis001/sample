@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="inp">
+    <button onclick="show()">Show</button>
+
+    <script>
+       function show(){
+        try {
+            let input = document.getElementById('inp').value;
+            if (input<6) throw "the entered number is to low"
+            if (input = isNaN) throw "Enter only Number"
+
+        } catch (error) {
+            console.log(error);
+        } finally{
+            console.log('fine');
+            
+        }
+    }
+    </script>
+</body>
+</html>

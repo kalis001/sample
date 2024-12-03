@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   
+
+    label {
+        margin-top: 30px;
+    }
+
+    input {
+        height: 30px;
+        font-size: 10px;
+        padding-left: 10px;
+        width: 200px;
+        border: none;
+        border-radius: 100px;
+    }
+    body{
+        background-color: rgb(199, 231, 231);
+    }
+    #inp1,#inp2{
+        margin-bottom: 20px;
+    }
+    .content {
+        margin-left: 100px;
+        padding-top: 50px;
+        background-color: rgb(242, 238, 238);
+        font-size: 20px;
+        width: 400px;
+        height: 320px;
+        padding-left: 100px;
+        border-radius: 50px;
+       
+    }
+    #inp2{
+        margin-top: 20px;
+    }
+    #submit{
+        padding: 10px 20px;
+        margin-top: 20px;
+        margin-left: 50px;
+        border-radius: 20px;
+        background-color: rgb(199, 231, 231);
+    }
+</style>
+
+<body>
+   
+        <div class="content">
+            <label for="" > Name :</label><br>
+            <input id="inp1" placeholder="Enter your name" type="text" ><br>
+
+            <label for="" > User Name :</label><br>
+            <input id="inp2" placeholder="Enter your user name" type="text"><br>
+
+            <label  for="" > password :</label><br>
+            <input id="inp3" placeholder="Enter your password" type="text"><br>
+
+            <button id="submit">Submit</button>
+        </div>
+    
+
+    <script>
+        inp1 = document.getElementById('inp1')
+        inp2 = document.getElementById('inp2')
+        inp3 = document.getElementById('inp3')
+        btn=document.getElementById('submit')
+      const url = 'https://671b74d12c842d92c3800a35.mockapi.io/data'
+        
+        async function submit() {
+            const data = {
+                name : inp1.value,
+                username : inp2.value,
+                password : inp3.value
+            }
+
+            try {
+                const post = await fetch(url,{
+                    method : 'POST',
+                    headers : {'Content-Type':'Application/Json'},
+                    body : JSON.stringify(data)
+                })
+                .then(()=>{
+                    alert('data created')
+                    window.location.href='./login.html'
+                })
+            } catch (error) {
+                console.log(error);
+                
+            }
+        }
+        btn.addEventListener('click',submit)
+    </script>
+</body>
+
+</html>

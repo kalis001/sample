@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .bg-img{
+            position: absolute;
+        }
+        .nav-left{
+            position: fixed;
+            background-color: rgb(255, 255, 255, 0.5);
+            text-align: center;
+        }
+        .nav-left ul {
+            list-style: none;
+            text-align: center;
+            cursor: pointer
+        }
+        .nav-left ul li{
+            padding: 10px;
+        }
+        .nav-left ul li:hover{
+            background-color: black;
+            color: white;
+        }
+        .content{
+            position: relative;
+            background-color:  rgb(255, 255, 255, 0.3);
+            color: black;
+            left: 300px;
+            top: 100px;
+            height: 500px;
+        }
+        #demo {
+            overflow: scroll;
+        }
+        #demo ul {
+            list-style: none;
+            border-bottom: 2px solid;
+            padding-bottom: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <img class="bg-img" src="./user-portal.webp" alt="">
+    <nav class="nav-left w-25 h-100">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD2UlEQVR4nO2dW4hVVRyHvzFDoxQSEbUQknwIelNQvFE0XRAKSwIjehAh5sUL+KKUWAo+9NSUKFYvhYZYqBWEIImRVvaQ0MMggoQIalAKYuClccnCtWCnc87MOWfvvf7nrN8Hv9eZvdd31l57rysIIYQQQgghhGiVPuBRYDYwF3gamAlMbPkvibZ4DBgAPgd+B64DrkHOAJ8ArwMPqrzLY1wo1F+A200ENMs5YJmkdM4iYKhNCfdmGHhLUtpvG7YC/5UkI+ZfYAfwJjBNcsYuY2fJIkaKb38+Ax6XmOZsrEFGMX+rfWnMfOBWzUJ8bgD9qin381MCGTGX1a78n+cSyojx3y0isMeAEP/omiojMAG4ZkCICz0B2bPQgIiYfdnbANYbEBHzp4Tc/Xp2RuJ7B7LvjDxkQEQx2X+9HzMgoZg5uT+2jhuQUMxTZM4JAxKKeYLMOWxAQjF+WDhr9huQEHM1dWFY4CMDImL+SF0YFthgQETMd6kLwwLLDYiI+SB1YVhglgERMStSF4YVLhiQ4ZP9V3rkWwMyzif9SRrjXQNCNGJY4AUDQl5N93u0xy4DQvx8MAG8ZEBGzIsyAp8aEBGjdgQ4aEBEzAHVEBtTgFyIv5bs2WRARIyfW5w9CwyIiPHzi7Onr8SFOZ1kKFyL4O6H4c2EMm6GaxAFngdOJpDxa/jfYgRmJBAyXSaac6lGGX9JxujsrVHIlxIyOq/UKOQ1CRmdB8Is9Kpl+Edj9hOrx8o7NQjZrtoxdiZXPM5+NbzRiRZYVaEQPxdMtEhfRfN+f1Pb0T6TgJ9LlHFa69E75+MShWgAythk7K/LuKDcGSxRyFepb6YX+LBEIX4tiuiQ3SUK8VNWhaHOxqOy0TnflPwNIjrkh5LHzUUHTAGulLwFk994WRhaELpfNtpjoAIZMVskpbUBqvfD5seuwgyGzdNEE+bWvPfJKWCJjNzPvDDhoOpa0Sh+i6jFuYvxG+2/DBxJJGGk+FMX3gYeIiP8GR+bw6pXZzQXgW1hDX3P1ob+8MqZcg6vazHDoQb7IzPG0wM8AqwFzhooXNdhzoWxeD+K2XU8HB5L/xgoSFdyfM/Be+HH1hUTE1aHZ7Dr8VwKLwBm15TMMvbG5GqKP0TgSYzxTDhhwGWaK8CzGGHlKCem5ZIbwBupZSwNF5K6MJyR3Ep5OMyczB9TrkEup2pTrG3v6gzl+7plLDNw0854/KY6tfGjgRt2xuP3tK+FGQm7yV0XZTic31s56wzcrOuSrMlt9x5nPF/UISTFbguuS+NPua6cXuzBdRUe7SqEEEIIIYQQQgi6jTuT057/Eia/4wAAAABJRU5ErkJggg==" alt="user">
+        <h2>USER PROFILE</h2>
+        <ul class="mt-5 ps-0">
+            <li onclick="showallbooks()">Show Books</li>
+        </ul>
+        <ul class="ps-0 logout">
+            <li onclick="logout()">Logout</li>
+        </ul>
+    </nav>
+    <div  class="content w-50 " id="demo">
+        
+    </div>
+
+</body>
+
+<script>
+    const result = document.getElementById('demo')
+
+     async function showallbooks(){
+        const data =await  fetch('https://6721d21398bbb4d93ca9ccb0.mockapi.io/data')
+        const res = await  data.json()
+
+        result.innerHTML = res.map((it)=>{
+
+       return( `
+        <ul>
+        <li>Book code : ${it.bCode}</li>
+        <li>Book Name : ${it.bName}</li>
+        <li>Author Name (1) : ${it.aNameone}</li>
+        <li>Author Name (2): ${it.aNametwo}</li>
+        <li>Subject : ${it.subject}</li>
+        <li>tags : ${it.tags}</li>
+        </ul>
+        `)}
+    ).join("")
+        
+    }
+
+    async function logout() {
+        alert('You will be logged out of this session')
+       window.location.href = './user.html'
+    }
+</script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class person{
+            constructor(name, sal){
+                this.name =name;
+                this.sal =sal;
+                let bonus = 3000;
+                let calcu =()=>{
+                    console.log(this.sal +bonus);
+                    
+                };
+                this.info =() =>{
+                    console.log(this.name);
+                    calcu()
+                    
+                }
+
+                // encapsulation
+
+                this.getBonus =()=>{
+                    console.log(bonus);
+                }
+            }
+        }
+
+        const per1 = new person("suresh",2000)
+
+        per1.info()
+        per1.getBonus()
+       console.log(per1.bonus);
+    </script>
+</body>
+</html>

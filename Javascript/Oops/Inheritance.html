@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class person {
+            constructor(name, id) {
+                this.name = name;
+                this.id = id;
+
+                this.play = () => {
+                    console.log("playing");
+
+                }
+            }
+        }
+        class employee extends person {
+            constructor(name, id) {
+                super(name, id)
+
+                this.design = () => {
+                    console.log("designing");
+                }
+            }
+
+        }
+        class developer extends employee {
+            constructor(name, id) {
+                super(name, id)
+                this.web = () => {
+                    console.log(" web designing");
+
+                }
+            }
+
+        }
+        const per1 = new developer("mahesh", 4)
+        per1.web()
+        per1.play()
+        console.log(per1);
+    </script>
+
+</body>
+
+</html>

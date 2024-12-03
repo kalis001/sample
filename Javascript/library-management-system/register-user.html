@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .bg-img {
+            position: absolute;
+        }
+
+        .form-content {
+            position: relative;
+            color: black;
+            width: 500px;
+            left: 250px;
+            top: 130px;
+            background-color: rgb(255, 255, 255, 0.3);
+            padding-bottom: 20px;
+            border-radius: 30px;
+
+        }
+
+        .form-content div label {
+            width: 200px;
+            text-align: end;
+            margin-top: 15px;
+        }
+
+        .form-content div input {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid white;
+            color: black;
+            margin-left: 30px;
+
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .register {
+            width: 150px;
+            height: 35px;
+            background-color: black;
+            color: white;
+            border-radius: 25px;
+            margin-left: 150px;
+            margin-top: 20px;
+        }
+
+        .title {
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .user-img {
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <img class="bg-img" src="./book.jpeg" alt="">
+    <div class="form-content">
+        <div class="title">
+            <img class="user-img" width="100" height="100" src="https://img.icons8.com/ios-filled/100/add-user-male.png"
+                alt="add-user-male" />
+            <h1>USER REGISTRATION</h1>
+        </div>
+        <div>
+            <label for="">User Name</label>
+            <input type="text" name="" id="uName">
+        </div>
+        <div>
+            <label for="">Password</label>
+            <input type="password" name="" id="uPass">
+        </div>
+        <div>
+            <label for="">Roll NO</label>
+            <input type="text" name="" id="uRoll">
+        </div>
+        <div>
+            <div>
+                <label for="">Date of birth</label>
+                <input type="date" name="" id="uDob">
+            </div>
+            <div>
+                <label for="">Email address</label>
+                <input type="text" name="" id="uEmail">
+            </div>
+            <button onclick="register()" class="register">Register</button>
+        </div>
+</body>
+<script>
+    const url = 'https://672de820fd89797156443a23.mockapi.io/registeruser'
+    async function register() {
+        const uName = document.getElementById('uName')
+        const uPass = document.getElementById('uPass').value
+        const uRoll = document.getElementById('uRoll').value
+        const uDob = document.getElementById('uDob').value
+        const uEmail = document.getElementById('uEmail').value
+
+        const data = {
+            uName: uName.value,
+            uPass: uPass,
+            uRoll: uRoll,
+            uDob: uDob,
+            uEmail: uEmail
+        }
+        if (uName === "") {
+            alert('Enter a valid user name')
+        }
+        // } else if (uPass === "") {
+        //     alert('Enter a valid password')
+        // }
+        // else if (uRoll === "") {
+        //     alert('Enter a valid Roll no')
+        // }
+        // else if (uDob === "") {
+        //     alert('Enter a valid Date of birth')
+        // }
+        // else if (uEmail === "") {
+        //     alert('Enter a valid Email')
+        // }
+
+        else {
+            const reg = await fetch('https://672de820fd89797156443a23.mockapi.io/registeruser')
+            const res = await reg.json()
+            try {
+                for (let i = 0; i <= res.length; i++) {
+                    if (res[i].uName === uName.value) {
+                        alert('User name has been already taken')
+                    }
+                    else {
+                        try {
+                            const post = await fetch(url, {
+                                method: 'POST',
+                                headers: { 'Content-type': 'Application/json' },
+                                body: JSON.stringify(data)
+                            })
+                        } catch (error) {
+                            console.log(error);
+                        }
+
+                    }
+                }
+            }
+            catch (error) {
+                console.log(error);
+
+            }
+        }
+
+
+        uName = " "
+        uPass = " "
+        uRoll = " "
+        uDob = " "
+        uEmail = " "
+
+        alert('You have been registered')
+    }
+</script>
+
+</html>

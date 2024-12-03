@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+    .bg-img {
+        width: 100%;
+        position: absolute;
+    }
+
+    .login-container {
+        position: relative;
+        background-color: rgba(97, 97, 97, 0.5);
+        text-align: center;
+        left: 400px;
+        top: 130px;
+        height: 400px;
+        padding-top: 20px;
+        border-radius: 25px;
+    }
+
+    .login-container input {
+        width: 250px;
+        margin-top: 20px;
+        height: 30px;
+        border: none;
+        background: transparent;
+        border-bottom: 2px solid black;
+        padding-bottom: 15px;
+        color: white;
+    }
+
+    .login-container input:focus {
+        outline: none;
+    }
+    .user-icon {
+        width: 100px;
+    }
+
+    .user-submit {
+        margin-top: 40px;
+        width: 150px;
+        height: 30px;
+        border: none;
+        background-color: grey;
+        color: white;
+        border-radius: 25px;
+    }
+
+    .register {
+        display: flex;
+        gap: 10px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .now {
+        color: rgb(41, 41, 236);
+    }
+</style>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <img class="bg-img" src="./user-bg.webp" alt="">
+
+    <div class="login-container w-25 ">
+        <img class="user-icon"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACJ0lEQVR4nO2ZzUtVQRiHnxI1NInbJgULo5Js1UIT1IXhxl0kbgIlSgjsH6hN0KKluAnJvhZ+ILrSwE0WrvoHIkVciUtroShmVjQx8LoZlK5z5px5L50HfnAZ7rm8z7mXc993BnJycmJRBlwDuiRNslYyXAbeAN8A48SuvQYuoZgTwFPg5yECbvaBJ3KNKk4CU0UIuJnUJvPMQ+Ig9ltUwVXgVwKR3/JQiI7PT8rNRGyJSmA7gMgOcCqmSGsAiYPciCnSE1DkdkyR3oAi9rOi0R5QpC2myGlgL4DEd6CayLwLIDKLAlqAPwkk7LXNKOFlApERFFEBLHpIfATKUUalzCHFSrySG6CWDmDhiEbSrr2Xx3bJcBboBu5J7OtC7KJySpka+W+5AwwCjyWDstYsHYE6LgL3ZThaO8ZTy753XK5tiFV8AXgAfArYNC4Dj4BzWQicB0aL3PLxzT7wAqhPQ8B2psPAjxQF3NiuegioCiXRCKxmKGCcrMjuZWKJrxEljGQDuOIrYZu5LwokjOSzb4N5V0Hxxkm/j8iMgsKNk2kfkQ8KCjdO7MyT6dSXViZ9RPoVFG6c9PmIlB+zd0o760kmys6M/83NEbE13CQht4DNiBKbUkMQ6oAx2RHMSmAHeAvUkgJngAHZXAhxLuJmC5iTASxYs/gv7Jn5deAh8ByYB5aA3SLv9pJcMyLDlT1+s4eqqqiQ4euCNHuNMkkWNGxW5+T8j/wF6qo3Ex99Np4AAAAASUVORK5CYII="
+            alt="user">
+        <h1>USER LOGIN</h1>
+        <input type="text" placeholder="Enter your username" id="uname">
+        <input type="password" placeholder="Enter your password" id="upass">
+        <button class="user-submit" onclick="submit()">Submit</button>
+
+        <div class="register">
+            <p>Not Registered ?</p>
+            <a class="now" onclick="register()">Register Now</a>
+        </div>
+    </div>
+
+</body>
+<script>
+    const url = 'https://672de820fd89797156443a23.mockapi.io/registeruser'
+    async function submit() {
+        const uName = document.getElementById('uname')
+        const uPass = document.getElementById('upass')
+
+
+        const data = await fetch(url)
+        const res = await data.json()
+        try {
+            for (let i = 0; i <= res.length; i++) {
+                if (res[i].uName === uName.value && res[i].uPass === uPass.value) {
+                    document.location.href = './user-portal.html'
+                }
+            
+            }
+        } catch (error) {
+            console.log(error);
+            alert("Enter a valid username and password")
+
+
+
+        }
+        uName.value = " "
+        uPass.value = " "
+
+
+
+
+    }
+
+    function register() {
+        window.location.href = './register-user.html'
+    }
+</script>
+
+</html>

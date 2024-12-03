@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       #data{
+        position: fixed;
+        bottom: 50%;
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+       }
+       
+        
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter name" name="" id="inp1">
+    <input type="text" placeholder="Enter user name" name="" id="inp2">
+    <input type="text" placeholder="Enter password" name="" id="inp3">
+    <button onclick="post()">Submit</button>
+    <button onclick="get()">get</button>
+
+    <table id="data" border="2">
+        <tr>
+            <th>NAME</th>
+            <th>USER NAME</th>
+            <th>PASSWORD</th>
+        </tr>
+        <tbody id="tb">
+
+        </tbody>
+    </table>
+
+    <script>
+        const url = 'https://671b74d12c842d92c3800a35.mockapi.io/data2'
+
+        async function post() {
+            inp1 = document.getElementById("inp1").value
+            inp2 = document.getElementById("inp2").value
+            inp3 = document.getElementById("inp3").value
+
+            const data = {
+                name : inp1,
+                username : inp2,
+                password : inp3
+            }
+            try {
+               const post = await fetch(url,{
+                method : 'POST',
+                headers :{'content-type' : 'Application/json'},
+                body :JSON.stringify(data)
+               }
+               )
+            } catch (error) {
+                console.log(error);
+                
+            }
+        }
+
+        async function get() {
+           const data = await fetch(url);
+           const res = await data.json()
+
+           const tbody = document.getElementById('tb')
+
+           tbody.innerHTML = res.map((it)=>
+            `
+            <tr>
+                <td>${it.name}</td>
+                <td>${it.username}</td>
+                <td>${it.password}</td>
+            </tr>
+            `
+           ).join("")
+
+        }
+    </script>
+</body>
+</html>

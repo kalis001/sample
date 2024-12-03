@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        #bg-library {
+            width: 100%;
+            height: 800px;
+            position: absolute;
+        }
+
+        .head {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            background: linear-gradient(transparent, #86bbbb);
+
+        }
+
+        .login-container {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            top: 100px;
+        }
+
+        .admin, .user {
+            width: 300px;
+            height: 400px;
+            text-align: center;
+            align-content: center;
+            border: 2px solid;
+            border-radius: 40px;
+            background-color: rgba(116, 116, 112,.3);
+        }
+        .user img{
+            width: 100px;
+        }
+
+        .admin button, .user button {
+            width: 150px;
+            height: 40px;
+            background-color: grey;
+            border-radius: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <div class="content">
+        <img id="bg-library" src="./pexels-photo-590493.webp" alt="">
+        <h1 class="head">ONLINE LIBRARY PORTAL</h1>
+        <div class="login-container row gap-5">
+            <div class="admin col-md-12 col-6">
+                <img
+                    src="data:image/png;base64,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"><br>
+                <button onclick="admin()">Admin Login</button>
+            </div>
+            <div class="user col-md-12 col-6">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADZElEQVR4nO2ZTUgVURTHf9p3aVZUBGWBi6AWEdWqD9Ki6MsQKpAyFwVtKiqLdoZZUAQZ5cYWIYm1iFKoIPqghaltkiBypUZRkZBpQR9K6IsL58HjMTP3zswdmBfvD2cxzJn/Of+5d+495w5kkcV/hSnATGACMcdEoASoBm4CbcBH4DeQSLEqYogcYAdwH/iZlrCbvSRmWAy0GyafamPAQmKCtcCPACK8plc+UCS2zPa3NAnYDlwCHgCz5G0OhhChrA9YJTHKgV8OPttsCJgLXE576w1y715IEalT7ACQC3Q43G8MK2IT8M2BeJ0M+5glIQl5UfnAPod7g7ISBkIx8NeBdAgYB5y0KCJpe4FpwIjDvZ1BREwFvrgEeyE+dyMQUi/cr12m33W/Qg57BLshPp0RCOkQ7mYPH18j88yDSH34Cj0RCOkR7qsePrdMReRqduZa8fsagZAB4a718PlsKmS2JliN+A1FIGRIuGs0fmpB0GJJBggpMhGyJgOErDARsjkDhKw3EbJFQ7ILKHDZtMLaCDAd2K3xK7YhpEB24EREVg7MsCGkwmDoz0co5JzB1FWzQosuDwK1dyAtbFRCqiXGgIdPskxyhWpgRjWBVFm/MUIhG4B5Gp9haa094VS2p9op8XsSgYjHwn1a4/fJZGo1aEhUbzBfPvo+iyIUl+JcYLC0XzERos6b3miIuqQnOWpRyBHh7DKIrZZoI5QYBN4vB23vLIj4ID1QpYHvanwgx6V3TrVeWRy2GiwQXjYqHIqrV+P7nABYDvzREF8Q3zMWltuLGj91urKUgDioIVftZ6mMYEsAES3ybKnBQUYFIfHIYBWbbDi/061SntWdjT3EAloN5rjqKo8HEHJMntV9Y602hLRpgqgNVOFsACHJlkA3Im02hHS7bF5NwCGgUPzqAwi5Js+qsmePHDq8cvB7a0OIOt96L8eWlSmJIxuYKqnrgP4AQvrl2WLhSqJQYjVKbJVDaCxKu86TxqfJoC7zY4qrSbjzNDkExhx5Q3d8/MQJY8PAU1kMVO0VCkVC1B5y57Zh3bIwrDQp35P/QOosV7W2rU9yVLm6Qqn9HoNkEwa/ILQjoysW42CdJtOrKgaJJjR2wkTIeOB2DJJNuFiz5Ojrl3OZ7LhxsDLJKYssssA//gG2qC39yVSnswAAAABJRU5ErkJggg=="><br>
+                <button onclick="user()">User Login</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    function admin(){
+        window.location.href = './admin.html'
+    }
+    function user(){
+        window.location.href = './user.html'
+    }
+</script>
+
+</html>

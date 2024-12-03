@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class person{
+            constructor (name,salary){
+                this.name = name;
+                this.salary = salary;
+                let bonus = 3000;
+                let calculate =()=>{
+                    console.log(this.salary + bonus);
+                };
+                this.info =()=>{
+                    console.log(this.name);
+                    calculate()
+                }
+                this.getbonus =()=>{
+                    console.log(bonus); 
+                }
+            }
+        }
+        const pers1 = new person("rajesh",4000)
+        pers1.info()
+        pers1.getbonus()
+        
+        
+    </script>
+</body>
+</html>

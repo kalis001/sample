@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+    <input type="text" name="" id="inp1">
+    <input type="text" name="" id="inp2">
+    <input type="text" name="" id="inp3">
+    <button onclick="show()">Show</button>
+    <p id="demo"></p>
+</div>
+
+
+    <script>
+        function show(){
+            const div = document.getElementById('container')
+            const inp1 =document.getElementById('inp1').value
+            const inp2 =document.getElementById('inp2').value
+            const inp3 =document.getElementById('inp3').value
+
+            const img = document.createElement('img')
+            const attr = img.setAttribute("src", inp1)
+            const attr1 = img.setAttribute("height", inp2)
+            const attr2 = img.setAttribute("width", inp3)
+             div.append(img)
+        
+document.getElementById('demo').innerHTML =img.innerHTML
+            }
+    </script>
+</body>
+</html>

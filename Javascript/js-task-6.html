@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="bgclr">Background colour</h1>
+    <button onclick="changeClr()">Change colour</button>
+
+    <script>
+        function changeClr() {
+            const red = Math.round(Math.random() * 255)
+            const green = Math.round(Math.random() * 255)
+            const blue = Math.round(Math.random() * 255)
+           
+
+            let content = document.getElementById('bgclr')
+
+            content.style.backgroundColor =`rgb(${red},${green},${blue})`
+
+
+            
+            // let colour = Math.random();
+            // if(colour>=0.1 && colour<=0.2){
+            //     content.style.backgroundColor='red'
+            // }
+            // else if(colour>=0.3 && colour<=0.4){
+            //     content.style.backgroundColor='green'
+            // }
+            // else if(colour>=0.5 && colour<=0.6){
+            //     content.style.backgroundColor='brown'
+            // }
+            // else if(colour>=0.7 && colour<=0.8){
+            //     content.style.backgroundColor='aqua'
+            // }
+            // else if(colour>0.8 && colour<=0.9){
+            //     content.style.backgroundColor='aquamarine'
+            // }
+            // else if(colour>=0.2 && colour<=0.3){
+            //     content.style.backgroundColor='blueviolet'
+            // }
+            // else if(colour>=0.2 && colour<=0.3){
+            //     content.style.backgroundColor='darkgrey'
+            // }
+            // else if(colour>=0.2 && colour<=0.3){
+            //     content.style.backgroundColor='chocolate'
+            // }
+            // console.log(colour);
+        }
+
+    </script>
+</body>
+
+</html>

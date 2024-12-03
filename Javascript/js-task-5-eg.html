@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <input id="inp1" type="url">
+        <input id="inp2" type="text">
+        <input id="inp3" type="text">
+        <button onclick="changeSize()">Change size</button>
+        <p id="para"></p>
+    </div> 
+    <script>
+        function changeSize(){
+            const container = document.getElementById('container')
+            const inp1 = document.getElementById('inp1').value
+            const inp2 = document.getElementById('inp2').value
+            const inp3 = document.getElementById('inp3').value
+
+            const img = document.createElement('img');
+            const attr1 = img.setAttribute('src',inp1)
+            const attr2 = img.setAttribute('width',inp2)
+            const attr3 = img.setAttribute('height',inp3)
+
+            container.append(img)
+            document.getElementById('para').innerHTML = img.innerHTML
+        }
+    </script>
+</body>
+
+</html>

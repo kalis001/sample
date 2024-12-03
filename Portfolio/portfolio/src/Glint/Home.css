@@ -1,0 +1,13 @@
+.navbar{
+    background-color: black;
+}
+.name{
+    color: white;
+}
+.navbar-nav a{
+    color: white;
+}
+.nav-search{
+    background-color: black;
+    border: 2px solid white;
+}

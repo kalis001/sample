@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="inp">
+    <h1 id="he1"></h1>
+    <!-- <button id="btn" onclick="show()">Show</button>
+    <button id="btn1" onclick="remove()">Remove</button> -->
+    <button>sumbit</button>
+    <button>sumbit1</button>
+    <button>sumbit2</button>
+
+    <p id="demo">Content</p>
+
+
+    <script>
+        const btn = document.querySelectorAll('button')
+        const inp = document.getElementById('inp');
+        const he1 = document.getElementById('he1');
+
+btn[0].onclick =()=>{
+    
+}
+btn[1].onclick =()=>{
+
+}
+btn[2].onclick =()=>{
+
+}
+
+        function display() {
+            he1.innerHTML = inp.value
+        }
+        
+        function show(){
+            inp.addEventListener("keyup",()=>{
+                he1.innerHTML = inp.value
+                
+            })
+            // inp.addEventListener("keyup",display)
+        }
+
+        function remove(){
+            inp.removeEventListener("keyup",display)
+
+        }
+        
+      
+        // function display() {
+        //     he1.innerHTML = inp.value
+        // }
+        // inp.addEventListener("keyup", display)
+
+        // document.getElementById('btn').onclick = () => {
+        //     inp.addEventListener("keyup", display)
+        // }
+        // document.getElementById('btn1').addEventListener("click", () => {
+
+        //     inp.removeEventListener("keyup", display)
+        // })
+
+
+        const para = document.getElementById('demo')
+        const red = Math.round(Math.random() * 255);
+        const green = Math.round(Math.random() * 255);
+        const blue = Math.round(Math.random() * 255);
+        function mouse() {
+            para.style.backgroundColor = `rgb(${red},${green},${blue})`
+        }
+        function leave() {
+            para.style.backgroundColor = 'white'
+        }
+        para.addEventListener("mouseenter", mouse);
+        para.addEventListener("mouseleave", leave)
+
+
+    </script>
+</body>
+
+</html>
